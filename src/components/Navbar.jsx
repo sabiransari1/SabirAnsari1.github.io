@@ -29,7 +29,12 @@ export const Navbar = () => {
       </Box>
 
       {/* second */}
-      <Box fontWeight={"extrabold"} fontSize={"3xl"}>
+      <Box
+        fontWeight={"extrabold"}
+        fontSize={"3xl"}
+        bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
+        bgClip="text"
+      >
         Sabir Ansari
       </Box>
 
@@ -96,7 +101,12 @@ export const Navbar = () => {
         </Link>
 
         <button className="button">
-          <Link to="contact" spy={true} smooth={true} class="nav-link contact">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            className="nav-link contact"
+          >
             Contact
           </Link>
         </button>

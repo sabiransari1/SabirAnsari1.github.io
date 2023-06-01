@@ -3,6 +3,7 @@ import { Flex, Box, Button, Image, Text, HStack } from "@chakra-ui/react";
 import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import AshleshaThakur from "../assets/images/AshleshaThakur.jpg";
+import resume from "../assets/resume/Sabir-Ansari-Resume.pdf";
 
 export const Home = () => {
   return (
@@ -40,8 +41,21 @@ export const Home = () => {
         </Box>
 
         {/* second */}
-        <Box>
-          <button className="button">Download CV</button>
+        <Box
+          onClick={() => {
+            window.open(
+              "https://drive.google.com/file/d/1W33mGB_jZwOzgvqO93pYUejy4CVZ0L2C/view?usp=sharing"
+            );
+          }}
+        >
+          {" "}
+          <a
+            href={resume}
+            download={"Sabir-Ansari-Resume"}
+            style={{ textDecoration: "none" }}
+          >
+            <button className="button">Download CV</button>
+          </a>
         </Box>
 
         {/* third */}

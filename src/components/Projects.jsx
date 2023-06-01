@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { Box, Flex, Text, Grid, Image } from "@chakra-ui/react";
 import AshleshaThakur from "../assets/images/AshleshaThakur.jpg";
