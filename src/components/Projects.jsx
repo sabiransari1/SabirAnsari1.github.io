@@ -69,10 +69,6 @@ export const Projects = () => {
             cursor={"pointer"}
             borderRadius="10px"
             color={"#788097"}
-            _hover={{
-              boxShadow: "none",
-              border: "none",
-            }}
           >
             <Image src={el.img} alt={el.name} w={"50%"} margin={"auto"} />
             <Text textAlign={"justify"}>{el.desc}</Text>

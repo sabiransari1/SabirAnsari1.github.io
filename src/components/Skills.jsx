@@ -56,9 +56,6 @@ export const Skills = () => {
               }
               borderRadius={"10px"}
               cursor={"pointer"}
-              _hover={{
-                boxShadow: "none",
-              }}
             >
               {index === 6 || index === 8 || index === 9 ? (
                 <Image
