@@ -90,7 +90,7 @@ export const Home = () => {
       </Flex>
 
       {/* right */}
-      <Box className="home-img" p={"3rem"} w={"40%"} border={"1px solid red"}>
+      <Box className="home-img" p={"3rem"} w={"40%"}>
         <Image src={AshleshaThakur} alt={"Sabir Ansari"} />
 
         <Center>
