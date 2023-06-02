@@ -53,14 +53,42 @@ export const Projects = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <Box p={"3rem 5rem"} id="projects">
+    <Box
+      p={{
+        base: "1rem 1rem",
+        sm: "1rem 1rem",
+        md: "1rem 2rem",
+        lg: "3rem 5rem",
+        xl: "3rem 5rem",
+        "2xl": "3rem 5rem",
+      }}
+      id="projects"
+    >
       {/* first */}
       <Flex>
-        <Text fontSize={"4xl"} fontWeight={"bold"} mr={".6rem"}>
+        <Text
+          fontSize={{
+            base: "3xl",
+            sm: "3xl",
+            md: "4xl",
+            lg: "4xl",
+            xl: "4xl",
+            "2xl": "4xl",
+          }}
+          fontWeight={"bold"}
+          mr={".6rem"}
+        >
           My
         </Text>
         <Text
-          fontSize={"4xl"}
+          fontSize={{
+            base: "3xl",
+            sm: "3xl",
+            md: "4xl",
+            lg: "4xl",
+            xl: "4xl",
+            "2xl": "4xl",
+          }}
           fontWeight={"bold"}
           bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
           bgClip="text"
@@ -70,12 +98,29 @@ export const Projects = () => {
       </Flex>
 
       {/* second */}
-      <Grid templateColumns={"repeat(2,1fr)"} gap={"2rem"}>
+      <Grid
+        templateColumns={{
+          base: "repeat(1,1fr)",
+          sm: "repeat(1,1fr)",
+          md: "repeat(2,1fr)",
+          lg: "repeat(2,1fr)",
+          xl: "repeat(2,1fr)",
+          "2xl": "repeat(3,1fr)",
+        }}
+        gap={"2rem"}
+      >
         {projects?.map((el, index) => (
           <Grid
             className="project-card"
             key={index}
-            p={"3rem"}
+            p={{
+              base: "1rem",
+              sm: "1rem",
+              md: "1rem",
+              lg: "3rem",
+              xl: "3rem",
+              "2xl": "3rem",
+            }}
             gap={".5rem"}
             boxShadow={
               "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset"
@@ -106,7 +151,18 @@ export const Projects = () => {
               {el.title}
             </Center>
 
-            <Text className="project-description" textAlign={"justify"}>
+            <Text
+              className="project-description"
+              textAlign={"justify"}
+              fontSize={{
+                base: "1xl",
+                sm: "1xl",
+                md: "1xl",
+                lg: "1xl",
+                xl: "1xl",
+                "2xl": "2xl",
+              }}
+            >
               {el.desc}
             </Text>
 

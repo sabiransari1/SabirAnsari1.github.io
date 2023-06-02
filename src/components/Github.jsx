@@ -22,11 +22,27 @@ export const Github = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <Box p={"3rem 5rem"}>
+    <Box
+      p={{
+        base: "1rem 1rem",
+        sm: "1rem 1rem",
+        md: "1rem 2rem",
+        lg: "3rem 5rem",
+        xl: "3rem 5rem",
+        "2xl": "3rem 5rem",
+      }}
+    >
       {/* first */}
       <Flex>
         <Text
-          fontSize={"4xl"}
+          fontSize={{
+            base: "3xl",
+            sm: "3xl",
+            md: "4xl",
+            lg: "4xl",
+            xl: "4xl",
+            "2xl": "4xl",
+          }}
           fontWeight={"bold"}
           mr={".6rem"}
           bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
@@ -35,7 +51,17 @@ export const Github = () => {
           Github
         </Text>
 
-        <Text fontSize={"4xl"} fontWeight={"bold"}>
+        <Text
+          fontSize={{
+            base: "3xl",
+            sm: "3xl",
+            md: "4xl",
+            lg: "4xl",
+            xl: "4xl",
+            "2xl": "4xl",
+          }}
+          fontWeight={"bold"}
+        >
           Stats
         </Text>
       </Flex>

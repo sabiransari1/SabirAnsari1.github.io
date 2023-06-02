@@ -52,16 +52,55 @@ export const Contact = () => {
   };
 
   return (
-    <Box p={"3rem 5rem"} id={"contact"}>
+    <Box
+      id={"contact"}
+      p={{
+        base: "1rem 1rem",
+        sm: "1rem 1rem",
+        md: "1rem 2rem",
+        lg: "3rem 5rem",
+        xl: "3rem 5rem",
+        "2xl": "3rem 5rem",
+      }}
+    >
       {/* first */}
-      <Flex align={"center"} justify={"space-between"}>
+      <Flex
+        align={"center"}
+        justify={"space-between"}
+        direction={{
+          base: "column",
+          sm: "column",
+          md: "row",
+          lg: "row",
+          xl: "row",
+          "2xl": "row",
+        }}
+        gap={"1rem"}
+      >
         {/* first */}
         <Box>
-          <Text fontSize={"4xl"} fontWeight={"bold"}>
+          <Text
+            fontSize={{
+              base: "3xl",
+              sm: "3xl",
+              md: "4xl",
+              lg: "4xl",
+              xl: "4xl",
+              "2xl": "4xl",
+            }}
+            fontWeight={"bold"}
+          >
             Get in Touch
           </Text>
           <Text
-            fontSize={"4xl"}
+            fontSize={{
+              base: "3xl",
+              sm: "3xl",
+              md: "4xl",
+              lg: "4xl",
+              xl: "4xl",
+              "2xl": "4xl",
+            }}
             fontWeight={"bold"}
             bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
             bgClip="text"
@@ -78,7 +117,19 @@ export const Contact = () => {
             target={"_blank"}
             rel="noreferrer noopener"
           >
-            <Button id="contact-github" leftIcon={<FaGithub />} variant="solid">
+            <Button
+              id="contact-github"
+              leftIcon={<FaGithub />}
+              variant="solid"
+              size={{
+                base: "xs",
+                sm: "sm",
+                md: "md",
+                lg: "md",
+                xl: "lg",
+                "2xl": "lg",
+              }}
+            >
               SabirAnsari1
             </Button>
           </a>
@@ -92,6 +143,14 @@ export const Contact = () => {
               id="contact-linkedin"
               leftIcon={<FaLinkedin />}
               variant="solid"
+              size={{
+                base: "xs",
+                sm: "sm",
+                md: "md",
+                lg: "md",
+                xl: "lg",
+                "2xl": "lg",
+              }}
             >
               Sabir Ansari
             </Button>
@@ -102,6 +161,14 @@ export const Contact = () => {
             leftIcon={<FaPhoneAlt />}
             variant="solid"
             cursor={"default"}
+            size={{
+              base: "xs",
+              sm: "sm",
+              md: "md",
+              lg: "md",
+              xl: "lg",
+              "2xl": "lg",
+            }}
           >
             +91 9560925661
           </Button>
@@ -111,6 +178,14 @@ export const Contact = () => {
             leftIcon={<FaRegEnvelope />}
             variant="solid"
             cursor={"default"}
+            size={{
+              base: "xs",
+              sm: "sm",
+              md: "md",
+              lg: "md",
+              xl: "lg",
+              "2xl": "lg",
+            }}
           >
             ansariisabir1@gmail.com
           </Button>

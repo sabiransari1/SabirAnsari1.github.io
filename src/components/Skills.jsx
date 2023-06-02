@@ -28,15 +28,43 @@ const skills = [
 
 export const Skills = () => {
   return (
-    <Box p={"3rem 5rem"} id={"skills"}>
+    <Box
+      p={{
+        base: "1rem 1rem",
+        sm: "1rem 1rem",
+        md: "1rem 2rem",
+        lg: "3rem 5rem",
+        xl: "3rem 5rem",
+        "2xl": "3rem 5rem",
+      }}
+      id={"skills"}
+    >
       {/* first */}
       <Box>
         <Flex>
-          <Text fontSize={"4xl"} fontWeight={"bold"} mr={".6rem"}>
+          <Text
+            fontSize={{
+              base: "3xl",
+              sm: "3xl",
+              md: "4xl",
+              lg: "4xl",
+              xl: "4xl",
+              "2xl": "4xl",
+            }}
+            fontWeight={"bold"}
+            mr={".6rem"}
+          >
             My
           </Text>
           <Text
-            fontSize={"4xl"}
+            fontSize={{
+              base: "3xl",
+              sm: "3xl",
+              md: "4xl",
+              lg: "4xl",
+              xl: "4xl",
+              "2xl": "4xl",
+            }}
             fontWeight={"bold"}
             bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
             bgClip="text"
@@ -46,7 +74,25 @@ export const Skills = () => {
         </Flex>
 
         {/* second */}
-        <Grid templateColumns={"repeat(5,1fr)"} gap={"2rem"} p={"0 10rem"}>
+        <Grid
+          templateColumns={{
+            base: "repeat(2,1fr)",
+            sm: "repeat(3,1fr)",
+            md: "repeat(4,1fr)",
+            lg: "repeat(5,1fr)",
+            xl: "repeat(5,1fr)",
+            "2xl": "repeat(5,1fr)",
+          }}
+          gap={"2rem"}
+          p={{
+            base: "0 1rem",
+            sm: "0 2rem",
+            md: "0 2rem",
+            lg: "0 4rem",
+            xl: "0 5rem",
+            "2xl": "0 5rem",
+          }}
+        >
           {skills?.map((el, index) => (
             <Box
               className="skills-card"

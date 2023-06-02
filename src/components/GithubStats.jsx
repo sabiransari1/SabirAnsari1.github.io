@@ -9,7 +9,17 @@ export const GithubStats = ({ img1, img2, img3 }) => {
         <Image src={img1} />
       </Center>
 
-      <Flex gap={"1rem"}>
+      <Flex
+        gap={"1rem"}
+        direction={{
+          base: "column",
+          sm: "column",
+          md: "column",
+          lg: "column",
+          xl: "row",
+          "2xl": "row",
+        }}
+      >
         <Image src={img2} />
         <Image src={img3} />
       </Flex>

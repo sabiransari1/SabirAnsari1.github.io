@@ -13,13 +13,61 @@ import { Typewriter } from "react-simple-typewriter";
 
 export const About = () => {
   return (
-    <Flex className="about section" p={"3rem 5rem"} id="about">
+    <Flex
+      id="about"
+      className="about section"
+      p={{
+        base: "1rem 1rem",
+        sm: "2rem 2rem",
+        md: "2rem 3rem",
+        lg: "3rem 5rem",
+        xl: "3rem 5rem",
+        "2xl": "3rem 5rem",
+      }}
+      direction={{
+        base: "column",
+        sm: "row",
+        md: "row",
+        lg: "row",
+        xl: "row",
+        "2xl": "row",
+      }}
+    >
       {/* left */}
-      <Flex w={"40%"} p={"3rem"} direction={"column"}>
+      <Flex
+        w={{
+          base: "100%",
+          sm: "40%",
+          md: "40%",
+          lg: "40%",
+          xl: "40%",
+          "2xl": "40%",
+        }}
+        p={{
+          base: "2rem",
+          sm: "2rem",
+          md: "2rem",
+          lg: "3rem",
+          xl: "3rem",
+          "2xl": "3rem",
+        }}
+        direction={"column"}
+        align={"center"}
+        justify={"center"}
+      >
         <Image src={SabirAnsari} alt="Sabir Ansari" />
 
         <Center>
-          <Text fontSize={"2xl"}>
+          <Text
+            fontSize={{
+              base: "1xl",
+              sm: "1xl",
+              md: "1xl",
+              lg: "3xl",
+              xl: "3xl",
+              "2xl": "3xl",
+            }}
+          >
             Life is simple{" "}
             <span
               style={{
@@ -42,14 +90,41 @@ export const About = () => {
       </Flex>
 
       {/* right */}
-      <Box w={"60%"}>
+      <Box
+        w={{
+          base: "100%",
+          sm: "60%",
+          md: "60%",
+          lg: "60%",
+          xl: "60%",
+          "2xl": "60%",
+        }}
+      >
         {/* first */}
         <Flex ml={"1rem"}>
-          <Text fontSize={"4xl"} fontWeight={"bold"} mr={".6rem"}>
+          <Text
+            fontSize={{
+              base: "3xl",
+              sm: "3xl",
+              md: "4xl",
+              lg: "4xl",
+              xl: "4xl",
+              "2xl": "4xl",
+            }}
+            fontWeight={"bold"}
+            mr={".6rem"}
+          >
             All
           </Text>
           <Text
-            fontSize={"4xl"}
+            fontSize={{
+              base: "3xl",
+              sm: "3xl",
+              md: "4xl",
+              lg: "4xl",
+              xl: "4xl",
+              "2xl": "4xl",
+            }}
             fontWeight={"bold"}
             bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
             bgClip="text"
