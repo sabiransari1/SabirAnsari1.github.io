@@ -92,10 +92,10 @@ export const Contact = () => {
               id="contact-linkedin"
               leftIcon={<FaLinkedin />}
               variant="solid"
-            >
+              >
               Sabir Ansari
             </Button>
-          </a>
+              </a>
 
           <Button
             id="contact-phone"

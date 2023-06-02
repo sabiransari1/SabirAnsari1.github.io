@@ -1,44 +1,57 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-scroll";
-import { Box, Flex, Text, Grid, Image } from "@chakra-ui/react";
-import AshleshaThakur from "../assets/images/AshleshaThakur.jpg";
+import {
+  Box,
+  Flex,
+  Text,
+  Grid,
+  Image,
+  Center,
+  useColorMode,
+} from "@chakra-ui/react";
+import zoomcar from "../assets/images/zoomcar.png";
+import apnamart from "../assets/images/apnamart.png";
+import todo from "../assets/images/todo.png";
+import dashboard from "../assets/images/dashboard.png";
 
 const projects = [
   {
-    img: AshleshaThakur,
-    title: "Sabir Ansari",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit asperiores aspernatur dicta veniam minus, odio sed nam soluta ullam sapiente, dolorum neque maiores nemo odit, officia quae quidem? Facere, necessitatibus.",
+    img: zoomcar,
+    title: "Zoomcar Clone",
+    desc: "Zoomcar is an e-commerce car rental platform.",
     stack: "HTML, CSS, javascript",
-    live: "SabirAnsari1.github.io",
-    codebase: "SabirAnsari1.github.io",
+    codebase: "https://github.com/SabirAnsari1/tasteless-horse-2112",
+    live: "https://zoom-car.netlify.app/",
   },
   {
-    img: AshleshaThakur,
-    title: "Sabir Ansari",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit asperiores aspernatur dicta veniam minus, odio sed nam soluta ullam sapiente, dolorum neque maiores nemo odit, officia quae quidem? Facere, necessitatibus.",
+    img: apnamart,
+    title: "IndiaMart Clone",
+    desc: "ApnaMART is inspired by IndiaMART, IndiaMART connecting buyers with suppliers as well as individual customers.",
     stack: "HTML, CSS, javascript",
-    live: "SabirAnsari1.github.io",
-    codebase: "SabirAnsari1.github.io",
+    codebase: "https://github.com/sinnu1908/radioactive-song-3321",
+    live: "https://aapnamart.netlify.app/",
   },
   {
-    img: AshleshaThakur,
-    title: "Sabir Ansari",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit asperiores aspernatur dicta veniam minus, odio sed nam soluta ullam sapiente, dolorum neque maiores nemo odit, officia quae quidem? Facere, necessitatibus.",
-    stack: "HTML, CSS, javascript",
-    live: "SabirAnsari1.github.io",
+    img: todo,
+    title: "Todo Application",
+    desc: "A Todo Application, It allows users to effortlessly manage their tasks and events, helping them stay organized and on top.",
+    stack: "HTML, CSS, javascript, React ,Chakra-UI",
     codebase: "SabirAnsari1.github.io",
+    live: "SabirAnsari1.github.io",
   },
   {
-    img: AshleshaThakur,
-    title: "Sabir Ansari",
-    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit asperiores aspernatur dicta veniam minus, odio sed nam soluta ullam sapiente, dolorum neque maiores nemo odit, officia quae quidem? Facere, necessitatibus.",
-    stack: "HTML, CSS, javascript",
-    live: "SabirAnsari1.github.io",
+    img: dashboard,
+    title: "CRUD Dashboard",
+    desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs.",
+    stack: "HTML, CSS, javascript, React ,Chakra-UI",
     codebase: "SabirAnsari1.github.io",
+    live: "SabirAnsari1.github.io",
   },
 ];
 
 export const Projects = () => {
+  const { colorMode } = useColorMode();
+
   return (
     <Box p={"3rem"} id="projects">
       {/* first */}
@@ -71,8 +84,19 @@ export const Projects = () => {
             borderRadius="10px"
             color={"#788097"}
           >
-            <Image src={el.img} alt={el.title} w={"50%"} margin={"auto"} />
-            <Text className="project-title">{el.title}</Text>
+            <Image
+              src={el.img}
+              alt={el.title}
+              margin={"auto"}
+              borderRadius="10px"
+            />
+            <Center
+              className="project-title"
+              fontSize={"2xl"}
+              color={colorMode === "light" ? "black" : "white"}
+            >
+              {el.title}
+            </Center>
             <Text className="project-description" textAlign={"justify"}>
               {el.desc}
             </Text>
@@ -90,17 +114,13 @@ export const Projects = () => {
             </Flex>
 
             <Flex justify={"space-between"}>
-              <button className="button project-github-link">
-                <Link to={el.codebase} spy={true} smooth={true}>
-                  Codebase
-                </Link>
-              </button>
+              <a href={el.codebase} target={"_blank"} rel="noreferrer noopener">
+                <button className="button project-github-link">Codebase</button>
+              </a>
 
-              <button className="button roject-deployed-link">
-                <Link to={el.live} spy={true} smooth={true}>
-                  Live
-                </Link>
-              </button>
+              <a href={el.live} target={"_blank"} rel="noreferrer noopener">
+                <button className="button roject-deployed-link">Live</button>
+              </a>
             </Flex>
           </Grid>
         ))}
