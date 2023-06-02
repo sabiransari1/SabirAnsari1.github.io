@@ -53,7 +53,7 @@ export const Projects = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <Box p={"3rem"} id="projects">
+    <Box p={"3rem 5rem"} id="projects">
       {/* first */}
       <Flex>
         <Text fontSize={"4xl"} fontWeight={"bold"} mr={".6rem"}>
@@ -70,7 +70,7 @@ export const Projects = () => {
       </Flex>
 
       {/* second */}
-      <Grid templateColumns={"repeat(2,1fr)"} gap={"1rem"} p={"3rem"}>
+      <Grid templateColumns={"repeat(2,1fr)"} gap={"2rem"}>
         {projects?.map((el, index) => (
           <Grid
             className="project-card"
@@ -90,6 +90,11 @@ export const Projects = () => {
                 margin={"auto"}
                 borderRadius="10px"
                 cursor={"pointer"}
+                transition="transform .5s"
+                _hover={{
+                  cursor: "pointer",
+                  transform: "scale(0.8)",
+                }}
               />
             </a>
 

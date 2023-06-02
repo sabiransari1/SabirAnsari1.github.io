@@ -28,9 +28,9 @@ const skills = [
 
 export const Skills = () => {
   return (
-    <Box p={"0 3rem"} id={"skills"}>
+    <Box p={"3rem 5rem"} id={"skills"}>
       {/* first */}
-      <Box p={"3rem 0"}>
+      <Box>
         <Flex>
           <Text fontSize={"4xl"} fontWeight={"bold"} mr={".6rem"}>
             My
@@ -46,7 +46,7 @@ export const Skills = () => {
         </Flex>
 
         {/* second */}
-        <Grid templateColumns={"repeat(7,1fr)"} gap={"1rem"}>
+        <Grid templateColumns={"repeat(5,1fr)"} gap={"2rem"} p={"0 10rem"}>
           {skills?.map((el, index) => (
             <Box
               className="skills-card"

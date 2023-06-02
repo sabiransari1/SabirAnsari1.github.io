@@ -17,7 +17,7 @@ export const Navbar = () => {
       align={"center"}
       justify={"space-between"}
       top={"0"}
-      p={"0 3rem"}
+      p={"0 5rem"}
       zIndex={"1"}
       bg={colorMode === "light" ? "white" : "black"}
       boxShadow={

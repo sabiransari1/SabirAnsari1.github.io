@@ -52,7 +52,7 @@ export const Contact = () => {
   };
 
   return (
-    <Box p={"3rem"} id={"contact"}>
+    <Box p={"3rem 5rem"} id={"contact"}>
       {/* first */}
       <Flex align={"center"} justify={"space-between"}>
         {/* first */}
@@ -92,10 +92,10 @@ export const Contact = () => {
               id="contact-linkedin"
               leftIcon={<FaLinkedin />}
               variant="solid"
-              >
+            >
               Sabir Ansari
             </Button>
-              </a>
+          </a>
 
           <Button
             id="contact-phone"

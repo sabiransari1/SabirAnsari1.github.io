@@ -9,21 +9,40 @@ import {
   Center,
 } from "@chakra-ui/react";
 import SabirAnsari from "../assets/images/SabirAnsari.gif";
+import { Typewriter } from "react-simple-typewriter";
 
 export const About = () => {
   return (
-    <Flex
-      p={"0 3rem"}
-      id="about"
-      className="about section"
-    >
+    <Flex className="about section" p={"3rem 5rem"} id="about">
       {/* left */}
-      <Center w={"40%"} p={"3rem"}>
+      <Flex w={"40%"} p={"3rem"} direction={"column"}>
         <Image src={SabirAnsari} alt="Sabir Ansari" />
-      </Center>
+
+        <Center>
+          <Text fontSize={"2xl"}>
+            Life is simple{" "}
+            <span
+              style={{
+                color: "#fca61f",
+              }}
+            >
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                words={["Eat", "Code", "Sleep", "Repeat!"]}
+                loop
+                cursor
+                cursorStyle="_"
+                typeSpeed={100}
+                deleteSpeed={70}
+                delaySpeed={1000}
+              />
+            </span>
+          </Text>
+        </Center>
+      </Flex>
 
       {/* right */}
-      <Box w={"60%"} p={"3rem 0"}>
+      <Box w={"60%"}>
         {/* first */}
         <Flex ml={"1rem"}>
           <Text fontSize={"4xl"} fontWeight={"bold"} mr={".6rem"}>

@@ -5,7 +5,7 @@ import wave from "../assets/images/wave.png";
 export const Footer = () => {
   return (
     <Flex
-      p={"3rem"}
+      p={"3rem 5rem"}
       w="100%"
       bgImage={wave}
       bgPosition={"center"}

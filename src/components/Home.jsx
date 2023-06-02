@@ -1,20 +1,16 @@
 import React from "react";
-import { Flex, Box, Image, Text, HStack } from "@chakra-ui/react";
+import { Flex, Box, Image, Text, Center } from "@chakra-ui/react";
 import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import AshleshaThakur from "../assets/images/AshleshaThakur.jpg";
 import resume from "../assets/resume/Sabir-Ansari-Resume.pdf";
+import { Typewriter } from "react-simple-typewriter";
 
 export const Home = () => {
   return (
-    <Flex p={"0 3rem"} id="home">
+    <Flex p={"3rem 5rem "} id="home">
       {/* left */}
-      <Flex
-        p={"3rem 0"}
-        direction={"column"}
-        justify={"space-around"}
-        w={"60%"}
-      >
+      <Flex direction={"column"} justify={"space-around"} w={"60%"}>
         {/* first */}
         <Box>
           <Box>
@@ -56,7 +52,7 @@ export const Home = () => {
         </Box>
 
         {/* third */}
-        <HStack spacing={"1rem"}>
+        <Flex>
           <a
             href="https://github.com/SabirAnsari1"
             target={"_blank"}
@@ -90,12 +86,26 @@ export const Home = () => {
               }}
             />
           </a>
-        </HStack>
+        </Flex>
       </Flex>
 
       {/* right */}
-      <Box p={"3rem"} w={"40%"} className="home-img">
+      <Box className="home-img" p={"3rem"} w={"40%"} border={"1px solid red"}>
         <Image src={AshleshaThakur} alt={"Sabir Ansari"} />
+
+        <Center>
+          <Text fontSize={"2xl"}>
+            <Typewriter
+              words={["I'm A MERN Stack Web Developer"]}
+              loop
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </Text>
+        </Center>
       </Box>
     </Flex>
   );

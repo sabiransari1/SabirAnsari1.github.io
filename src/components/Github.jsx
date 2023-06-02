@@ -22,7 +22,8 @@ export const Github = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <Box p={"3rem"}>
+    <Box p={"3rem 5rem"}>
+      {/* first */}
       <Flex>
         <Text
           fontSize={"4xl"}
@@ -38,6 +39,8 @@ export const Github = () => {
           Stats
         </Text>
       </Flex>
+
+      {/* second */}
       {colorMode === "light"
         ? lightGithubStats?.map((el, index) => (
             <GithubStats key={index} {...el} />
