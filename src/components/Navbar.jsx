@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useColorMode, Flex, IconButton, Box, Text } from "@chakra-ui/react";
+import resume from "../assets/resume/Sabir-Ansari-Resume.pdf";
 
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -100,16 +101,34 @@ export const Navbar = () => {
           </Text>
         </Link>
 
-        <button className="button">
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
+        <Link to="contact" spy={true} smooth={true}>
+          <Text
             className="nav-link contact"
+            fontSize={"2xl"}
+            cursor={"pointer"}
+            _hover={{
+              bgGradient:
+                "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
+              bgClip: "text",
+            }}
           >
             Contact
-          </Link>
-        </button>
+          </Text>
+        </Link>
+
+        <Box
+          id="resume-button-1"
+          onClick={() => {
+            window.open(
+              "https://drive.google.com/file/d/1W33mGB_jZwOzgvqO93pYUejy4CVZ0L2C/view?usp=sharing"
+            );
+          }}
+        >
+          {" "}
+          <a id="resume-link-1" href={resume} download={"Sabir-Ansari-Resume"}>
+            <button className="button nav-link resume">Resume</button>
+          </a>
+        </Box>
       </Flex>
 
       {/* fourth */}

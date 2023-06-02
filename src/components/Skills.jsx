@@ -13,17 +13,17 @@ import mongodb from "../assets/images/mongodb.png";
 import git from "../assets/images/git.png";
 
 const skills = [
-  { img: html, title: "HTML" },
-  { img: css, title: "CSS" },
-  { img: javascript, title: "JavaScript" },
-  { img: react, title: "React" },
-  { img: redux, title: "Redux" },
-  { img: typescript, title: "TypeScript" },
-  { img: chakra, title: "Chakra-UI" },
-  { img: nodejs, title: "Node.js" },
-  { img: express, title: "Express" },
-  { img: mongodb, title: "MongoDB" },
-  { img: git, title: "Git" },
+  { img: html, name: "HTML" },
+  { img: css, name: "CSS" },
+  { img: javascript, name: "JavaScript" },
+  { img: react, name: "React" },
+  { img: redux, name: "Redux" },
+  { img: typescript, name: "TypeScript" },
+  { img: chakra, name: "Chakra-UI" },
+  { img: nodejs, name: "Node.js" },
+  { img: express, name: "Express" },
+  { img: mongodb, name: "MongoDB" },
+  { img: git, name: "Git" },
 ];
 
 export const Skills = () => {
@@ -49,6 +49,7 @@ export const Skills = () => {
         <Grid templateColumns={"repeat(7,1fr)"} gap={"1rem"}>
           {skills?.map((el, index) => (
             <Box
+              className="skills-card"
               key={index}
               p={".5rem"}
               boxShadow={
@@ -59,17 +60,24 @@ export const Skills = () => {
             >
               {index === 6 || index === 8 || index === 9 ? (
                 <Image
+                  className="skills-card-img"
                   src={el.img}
-                  alt="Sabir Ansari"
+                  alt="Skill card img"
                   borderRadius={"50%"}
                   boxShadow={
                     "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
                   }
                 />
               ) : (
-                <Image src={el.img} alt="Sabir Ansari" />
+                <Image
+                  className="skills-card-img"
+                  src={el.img}
+                  alt="Skill card img"
+                />
               )}
-              <Center mt={".5rem"}>{el.title}</Center>
+              <Center className="skills-card-name" mt={".5rem"}>
+                {el.name}
+              </Center>
             </Box>
           ))}
         </Grid>

@@ -12,7 +12,11 @@ import SabirAnsari from "../assets/images/SabirAnsari.gif";
 
 export const About = () => {
   return (
-    <Flex p={"0 3rem"} id="about" className="about section">
+    <Flex
+      p={"0 3rem"}
+      id="about"
+      className="about section"
+    >
       {/* left */}
       <Center w={"40%"} p={"3rem"}>
         <Image src={SabirAnsari} alt="Sabir Ansari" />

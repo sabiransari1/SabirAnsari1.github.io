@@ -42,6 +42,7 @@ export const Home = () => {
 
         {/* second */}
         <Box
+          id="resume-button-2"
           onClick={() => {
             window.open(
               "https://drive.google.com/file/d/1W33mGB_jZwOzgvqO93pYUejy4CVZ0L2C/view?usp=sharing"
@@ -49,12 +50,8 @@ export const Home = () => {
           }}
         >
           {" "}
-          <a
-            href={resume}
-            download={"Sabir-Ansari-Resume"}
-            style={{ textDecoration: "none" }}
-          >
-            <button className="button">Download CV</button>
+          <a id="resume-link-2" href={resume} download={"Sabir-Ansari-Resume"}>
+            <button className="button">Resume</button>
           </a>
         </Box>
 
@@ -66,7 +63,7 @@ export const Home = () => {
       </Flex>
 
       {/* right */}
-      <Box p={"3rem"} w={"40%"}>
+      <Box p={"3rem"} w={"40%"} className="home-img">
         <Image src={AshleshaThakur} alt={"Sabir Ansari"} />
       </Box>
     </Flex>

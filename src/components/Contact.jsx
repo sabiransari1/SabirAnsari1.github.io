@@ -1,7 +1,27 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-scroll";
 import emailjs from "@emailjs/browser";
-import { Flex, Text, Input, Center, VStack, Textarea } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Input,
+  Center,
+  VStack,
+  Textarea,
+  Box,
+  Image,
+  IconButton,
+  Button,
+} from "@chakra-ui/react";
 import { Toast } from "./Toast";
+import github from "../assets/images/github.png";
+import linkedin from "../assets/images/linkedin.png";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaPhoneAlt,
+  FaRegEnvelope,
+} from "react-icons/fa";
 
 export const Contact = () => {
   const form = useRef();
@@ -32,15 +52,11 @@ export const Contact = () => {
   };
 
   return (
-    <>
-      <Flex p={"3rem"} id={"contact"}>
+    <Box p={"3rem"} id={"contact"}>
+      {/* first */}
+      <Flex align={"center"} justify={"space-between"}>
         {/* first */}
-        <Flex
-          w={"40%"}
-          direction={"column"}
-          align={"center"}
-          justify={"center"}
-        >
+        <Box>
           <Text fontSize={"4xl"} fontWeight={"bold"}>
             Get in Touch
           </Text>
@@ -52,45 +68,83 @@ export const Contact = () => {
           >
             Contact me
           </Text>
-        </Flex>
+        </Box>
+
         {/* second */}
-        <Center w={"60%"}>
-          <form ref={form} onSubmit={sendEmail}>
-            <VStack w={"100%"} spacing={"1rem"}>
-              <Input
-                type="text"
-                name="name"
-                placeholder="Name"
-                variant="Outline"
-                size="lg"
-                border={"5px solid orange"}
-              />
+        {/* first */}
+        <VStack spacing={"1rem"}>
+          <Button id="contact-github" leftIcon={<FaGithub />} variant="solid">
+            SabirAnsari1
+          </Button>
 
-              <Input
-                type="email"
-                name="email"
-                placeholder="Email"
-                variant="Outline"
-                size="lg"
-                border={"5px solid orange"}
-              />
+          <Button
+            id="contact-linkedin"
+            leftIcon={<FaLinkedin />}
+            variant="solid"
+          >
+            Sabir Ansari
+          </Button>
 
-              <Textarea
-                placeholder="Message"
-                name="message"
-                variant="Outline"
-                size="lg"
-                border={"5px solid orange"}
-              />
+          <Button
+            id="contact-phone"
+            leftIcon={<FaPhoneAlt />}
+            variant="solid"
+            cursor={"default"}
+          >
+            +91 9560925661
+          </Button>
 
-              <button className="button" type="submit">
-                Send
-              </button>
-            </VStack>
-          </form>
-        </Center>
+          <Button
+            id="contact-email"
+            leftIcon={<FaRegEnvelope />}
+            variant="solid"
+            cursor={"default"}
+          >
+            ansariisabir1@gmail.com
+          </Button>
+        </VStack>
+
+        {/* second */}
+        <form ref={form} onSubmit={sendEmail}>
+          <VStack w={"100%"} spacing={"1rem"}>
+            <Input
+              type="text"
+              name="name"
+              placeholder="Name"
+              variant="Outline"
+              size="lg"
+              required
+              border={"5px solid orange"}
+            />
+
+            <Input
+              type="email"
+              name="email"
+              placeholder="Email"
+              variant="Outline"
+              size="lg"
+              required
+              border={"5px solid orange"}
+            />
+
+            <Textarea
+              placeholder="Message"
+              name="message"
+              variant="Outline"
+              size="lg"
+              required
+              rows="7"
+              border={"5px solid orange"}
+            />
+
+            <button className="button" type="submit">
+              Send
+            </button>
+          </VStack>
+        </form>
       </Flex>
 
+      {/* second */}
       {status === null ? (
         ""
       ) : status ? (
@@ -98,6 +152,6 @@ export const Contact = () => {
       ) : (
         <Toast status={status} />
       )}
-    </>
+    </Box>
   );
 };
