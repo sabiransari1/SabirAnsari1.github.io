@@ -80,16 +80,19 @@ export const Projects = () => {
             boxShadow={
               "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset"
             }
-            cursor={"pointer"}
             borderRadius="10px"
             color={"#788097"}
           >
-            <Image
-              src={el.img}
-              alt={el.title}
-              margin={"auto"}
-              borderRadius="10px"
-            />
+            <a href={el.live} target={"_blank"} rel="noreferrer noopener">
+              <Image
+                src={el.img}
+                alt={el.title}
+                margin={"auto"}
+                borderRadius="10px"
+                cursor={"pointer"}
+              />
+            </a>
+
             <Center
               className="project-title"
               fontSize={"2xl"}
@@ -97,6 +100,7 @@ export const Projects = () => {
             >
               {el.title}
             </Center>
+
             <Text className="project-description" textAlign={"justify"}>
               {el.desc}
             </Text>
