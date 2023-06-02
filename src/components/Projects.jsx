@@ -36,7 +36,7 @@ const projects = [
     title: "Todo Application",
     desc: "A Todo Application, It allows users to effortlessly manage their tasks and events, helping them stay organized and on top.",
     stack: "HTML, CSS, javascript, React ,Chakra-UI",
-    codebase: "SabirAnsari1.github.io",
+    codebase: "https://github.com/SabirAnsari1/todo-application",
     live: "SabirAnsari1.github.io",
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     title: "CRUD Dashboard",
     desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs.",
     stack: "HTML, CSS, javascript, React ,Chakra-UI",
-    codebase: "SabirAnsari1.github.io",
+    codebase: "https://github.com/SabirAnsari1/crud-dashboard",
     live: "SabirAnsari1.github.io",
   },
 ];
