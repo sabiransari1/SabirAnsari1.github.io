@@ -1,16 +1,25 @@
 import React from "react";
-import {
-  Box,
-  Flex,
-  Text,
-  Image,
-  useColorMode,
-  Center,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Flex, Text, useColorMode } from "@chakra-ui/react";
+import { GithubStats } from "./GithubStats";
+
+const lightGithubStats = [
+  {
+    img1: "https://github-readme-stats.vercel.app/api/top-langs/?username=sabiransari1&theme=flag-india",
+    img2: "https://github-readme-stats.vercel.app/api?username=sabiransari1&show_icons=true&theme=flag-india",
+    img3: "https://github-readme-streak-stats.herokuapp.com/?user=sabiransari1&theme=flag-india",
+  },
+];
+
+const darkGithubStats = [
+  {
+    img1: "https://github-readme-stats.vercel.app/api/top-langs/?username=sabiransari1&theme=great-gatsby",
+    img2: "https://github-readme-stats.vercel.app/api?username=sabiransari1&show_icons=true&theme=great-gatsby",
+    img3: "https://github-readme-streak-stats.herokuapp.com/?user=sabiransari1&theme=great-gatsby",
+  },
+];
 
 export const Github = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <Box p={"3rem"}>
@@ -29,55 +38,13 @@ export const Github = () => {
           Stats
         </Text>
       </Flex>
-
-      {colorMode === "light" ? (
-        <VStack spacing={"1rem"}>
-          <Center>
-            <Image
-              src={
-                "https://github-readme-stats.vercel.app/api/top-langs/?username=sabiransari1&theme=flag-india"
-              }
-            />
-          </Center>
-
-          <Flex gap={"1rem"}>
-            <Image
-              src={
-                "https://github-readme-stats.vercel.app/api?username=sabiransari1&show_icons=true&theme=flag-india"
-              }
-            />
-            <Image
-              src={
-                "https://github-readme-streak-stats.herokuapp.com/?user=sabiransari1&theme=flag-india"
-              }
-            />
-          </Flex>
-        </VStack>
-      ) : (
-        <VStack gap={"1rem"}>
-          <Center>
-            <Image
-              src={
-                "https://github-readme-stats.vercel.app/api/top-langs/?username=sabiransari1&theme=great-gatsby"
-              }
-            />
-          </Center>
-
-          <Flex gap={"1rem"}>
-            {" "}
-            <Image
-              src={
-                "https://github-readme-stats.vercel.app/api?username=sabiransari1&show_icons=true&theme=great-gatsby"
-              }
-            />
-            <Image
-              src={
-                "https://github-readme-streak-stats.herokuapp.com/?user=sabiransari1&theme=great-gatsby"
-              }
-            />
-          </Flex>
-        </VStack>
-      )}
+      {colorMode === "light"
+        ? lightGithubStats?.map((el, index) => (
+            <GithubStats key={index} {...el} />
+          ))
+        : darkGithubStats?.map((el, index) => (
+            <GithubStats key={index} {...el} />
+          ))}
     </Box>
   );
 };
