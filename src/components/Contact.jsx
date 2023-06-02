@@ -73,17 +73,29 @@ export const Contact = () => {
         {/* second */}
         {/* first */}
         <VStack spacing={"1rem"}>
-          <Button id="contact-github" leftIcon={<FaGithub />} variant="solid">
-            SabirAnsari1
-          </Button>
-
-          <Button
-            id="contact-linkedin"
-            leftIcon={<FaLinkedin />}
-            variant="solid"
+          <a
+            href="https://github.com/SabirAnsari1"
+            target={"_blank"}
+            rel="noreferrer noopener"
           >
-            Sabir Ansari
-          </Button>
+            <Button id="contact-github" leftIcon={<FaGithub />} variant="solid">
+              SabirAnsari1
+            </Button>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/sabir-ansari-33b275257/"
+            target={"_blank"}
+            rel="noreferrer noopener"
+          >
+            <Button
+              id="contact-linkedin"
+              leftIcon={<FaLinkedin />}
+              variant="solid"
+            >
+              Sabir Ansari
+            </Button>
+          </a>
 
           <Button
             id="contact-phone"

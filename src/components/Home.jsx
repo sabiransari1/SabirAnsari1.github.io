@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Box, Button, Image, Text, HStack } from "@chakra-ui/react";
+import { Flex, Box, Image, Text, HStack } from "@chakra-ui/react";
 import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import AshleshaThakur from "../assets/images/AshleshaThakur.jpg";
@@ -57,8 +57,39 @@ export const Home = () => {
 
         {/* third */}
         <HStack spacing={"1rem"}>
-          <Image src={github} w={"5%"} id="contact-github" />
-          <Image src={linkedin} w={"5%"} id="contact-linkedin" />
+          <a
+            href="https://github.com/SabirAnsari1"
+            target={"_blank"}
+            rel="noreferrer noopener"
+          >
+            <Image
+              id="contact-github"
+              src={github}
+              transform="scale(0.5)"
+              transition="transform .5s"
+              _hover={{
+                cursor: "pointer",
+                transform: "scale(0.8)",
+              }}
+            />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/sabir-ansari-33b275257/"
+            target={"_blank"}
+            rel="noreferrer noopener"
+          >
+            <Image
+              id="contact-linkedin"
+              src={linkedin}
+              transform="scale(0.5)"
+              transition="transform .5s"
+              _hover={{
+                cursor: "pointer",
+                transform: "scale(0.8)",
+              }}
+            />
+          </a>
         </HStack>
       </Flex>
 
