@@ -9,7 +9,6 @@ import { Typewriter } from "react-simple-typewriter";
 export const Home = () => {
   return (
     <Flex
-      border={"1px solid red"}
       id="home"
       p={{
         base: "1rem 1rem",
@@ -39,7 +38,6 @@ export const Home = () => {
           xl: "60%",
           "2xl": "60%",
         }}
-        border={"1px solid red"}
       >
         {/* first */}
         <Box>
@@ -82,7 +80,7 @@ export const Home = () => {
         </Box>
 
         {/* third */}
-        <Flex border={"1px solid red"}>
+        <Flex>
           <a
             href="https://github.com/SabirAnsari1"
             target={"_blank"}
