@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Grid, Box, Image, Text, Center } from "@chakra-ui/react";
+import { Flex, Grid, Box, Image, Text, Center, VStack } from "@chakra-ui/react";
 import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import AshleshaThakur from "../assets/images/AshleshaThakur.jpg";
@@ -9,6 +9,7 @@ import { Typewriter } from "react-simple-typewriter";
 export const Home = () => {
   return (
     <Flex
+      border={"1px solid red"}
       id="home"
       p={{
         base: "1rem 1rem",
@@ -38,6 +39,7 @@ export const Home = () => {
           xl: "60%",
           "2xl": "60%",
         }}
+        border={"1px solid red"}
       >
         {/* first */}
         <Box>
@@ -80,7 +82,7 @@ export const Home = () => {
         </Box>
 
         {/* third */}
-        <Flex>
+        <Flex border={"1px solid red"}>
           <a
             href="https://github.com/SabirAnsari1"
             target={"_blank"}
@@ -141,6 +143,14 @@ export const Home = () => {
         <Image
           src={AshleshaThakur}
           alt={"Sabir Ansari"}
+          w={{
+            base: "80%",
+            sm: "80%",
+            md: "70%",
+            lg: "60%",
+            xl: "60%",
+            "2xl": "50%rem",
+          }}
           objectFit="cover"
           aspectRatio={"auto"}
         />
