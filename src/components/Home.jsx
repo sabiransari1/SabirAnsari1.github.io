@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Box, Image, Text, Center } from "@chakra-ui/react";
+import { Flex, Grid, Box, Image, Text, Center } from "@chakra-ui/react";
 import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import AshleshaThakur from "../assets/images/AshleshaThakur.jpg";
@@ -8,7 +8,6 @@ import { Typewriter } from "react-simple-typewriter";
 
 export const Home = () => {
   return (
-    // <Flex p={"3rem 5rem"} id="home">
     <Flex
       id="home"
       p={{
@@ -29,9 +28,8 @@ export const Home = () => {
       }}
     >
       {/* left */}
-      <Flex
-        direction={"column"}
-        justify={"space-around"}
+      <Grid
+        gap={"1rem"}
         w={{
           base: "100%",
           sm: "60%",
@@ -91,11 +89,10 @@ export const Home = () => {
             <Image
               id="contact-github"
               src={github}
-              transform="scale(0.5)"
+              w={"50%"}
               transition="transform .5s"
               _hover={{
-                cursor: "pointer",
-                transform: "scale(0.8)",
+                transform: "scale(1.5)",
               }}
             />
           </a>
@@ -108,16 +105,15 @@ export const Home = () => {
             <Image
               id="contact-linkedin"
               src={linkedin}
-              transform="scale(0.5)"
+              w={"50%"}
               transition="transform .5s"
               _hover={{
-                cursor: "pointer",
-                transform: "scale(0.8)",
+                transform: "scale(1.5)",
               }}
             />
           </a>
         </Flex>
-      </Flex>
+      </Grid>
 
       {/* right */}
       <Flex
@@ -142,7 +138,12 @@ export const Home = () => {
         align={"center"}
         justify={"center"}
       >
-        <Image src={AshleshaThakur} alt={"Sabir Ansari"} />
+        <Image
+          src={AshleshaThakur}
+          alt={"Sabir Ansari"}
+          objectFit="cover"
+          aspectRatio={"auto"}
+        />
 
         <Center>
           <Text

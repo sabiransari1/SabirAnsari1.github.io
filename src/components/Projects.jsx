@@ -101,7 +101,7 @@ export const Projects = () => {
       <Grid
         templateColumns={{
           base: "repeat(1,1fr)",
-          sm: "repeat(1,1fr)",
+          sm: "repeat(2,1fr)",
           md: "repeat(2,1fr)",
           lg: "repeat(2,1fr)",
           xl: "repeat(2,1fr)",

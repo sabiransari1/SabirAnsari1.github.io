@@ -77,7 +77,7 @@ export const Skills = () => {
         <Grid
           templateColumns={{
             base: "repeat(2,1fr)",
-            sm: "repeat(3,1fr)",
+            sm: "repeat(4,1fr)",
             md: "repeat(4,1fr)",
             lg: "repeat(5,1fr)",
             xl: "repeat(5,1fr)",
@@ -86,7 +86,7 @@ export const Skills = () => {
           gap={"2rem"}
           p={{
             base: "0 1rem",
-            sm: "0 2rem",
+            sm: "0 1rem",
             md: "0 2rem",
             lg: "0 4rem",
             xl: "0 5rem",

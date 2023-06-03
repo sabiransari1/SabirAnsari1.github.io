@@ -55,7 +55,12 @@ export const About = () => {
         align={"center"}
         justify={"center"}
       >
-        <Image src={SabirAnsari} alt="Sabir Ansari" />
+        <Image
+          src={SabirAnsari}
+          alt="Sabir Ansari"
+          objectFit="cover"
+          aspectRatio={"auto"}
+        />
 
         <Center>
           <Text
