@@ -2,11 +2,23 @@ import React from "react";
 import { Link } from "react-scroll";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useColorMode, Flex, IconButton, Box, Text } from "@chakra-ui/react";
+import {
+  useColorMode,
+  Flex,
+  IconButton,
+  Box,
+  Text,
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerBody,
+  useDisclosure,
+} from "@chakra-ui/react";
 import resume from "../assets/resume/Sabir-Ansari-Resume.pdf";
 
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Flex
@@ -42,7 +54,79 @@ export const Navbar = () => {
           "2xl": "none",
         }}
       >
-        <IconButton icon={<GiHamburgerMenu />} size={"sm"} />
+        <IconButton icon={<GiHamburgerMenu />} size={"sm"} onClick={onOpen} />
+
+        <Drawer placement={"top"} onClose={onClose} isOpen={isOpen}>
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerBody
+              p={{
+                base: "1rem 1rem",
+                sm: "1rem 1rem",
+                md: "2rem 2rem",
+                lg: "0rem 5rem",
+                xl: "0rem 5rem",
+                "2xl": "0rem 5rem",
+              }}
+              bg={colorMode === "light" ? "white" : "black"}
+            >
+              <Link to="home" spy={true} smooth={true} onClick={onClose}>
+                <Text
+                  className="nav-link home"
+                  fontSize={"2xl"}
+                  bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
+                  bgClip="text"
+                >
+                  Home
+                </Text>
+              </Link>
+
+              <Link to="about" spy={true} smooth={true} onClick={onClose}>
+                <Text
+                  className="nav-link about"
+                  fontSize={"2xl"}
+                  bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
+                  bgClip="text"
+                >
+                  About Me
+                </Text>
+              </Link>
+
+              <Link to="skills" spy={true} smooth={true} onClick={onClose}>
+                <Text
+                  className="nav-link skills"
+                  fontSize={"2xl"}
+                  bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
+                  bgClip="text"
+                >
+                  Skills
+                </Text>
+              </Link>
+
+              <Link to="projects" spy={true} smooth={true} onClick={onClose}>
+                <Text
+                  className="nav-link projects"
+                  fontSize={"2xl"}
+                  bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
+                  bgClip="text"
+                >
+                  Projects
+                </Text>
+              </Link>
+
+              <Link to="contact" spy={true} smooth={true} onClick={onClose}>
+                <Text
+                  className="nav-link contact"
+                  fontSize={"2xl"}
+                  bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
+                  bgClip="text"
+                >
+                  Contact
+                </Text>
+              </Link>
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
       </Box>
 
       {/* second */}
