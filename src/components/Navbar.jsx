@@ -64,9 +64,9 @@ export const Navbar = () => {
                 base: "1rem 1rem",
                 sm: "1rem 1rem",
                 md: "2rem 2rem",
-                lg: "0rem 5rem",
-                xl: "0rem 5rem",
-                "2xl": "0rem 5rem",
+                lg: "2rem 5rem",
+                xl: "2rem 5rem",
+                "2xl": "2rem 5rem",
               }}
               bg={colorMode === "light" ? "white" : "black"}
             >
