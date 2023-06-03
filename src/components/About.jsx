@@ -63,16 +63,7 @@ export const About = () => {
         />
 
         <Center>
-          <Text
-            fontSize={{
-              base: "1xl",
-              sm: "1xl",
-              md: "1xl",
-              lg: "3xl",
-              xl: "3xl",
-              "2xl": "3xl",
-            }}
-          >
+          <Text>
             Life is simple{" "}
             <span
               style={{
