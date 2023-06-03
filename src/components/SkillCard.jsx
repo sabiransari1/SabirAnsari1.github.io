@@ -11,7 +11,7 @@ export const SkillCard = ({ img, name }) => {
       boxShadow={
         "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
       }
-      w={"120px"}
+      w={"100px"}
     >
       <Image className="skills-card-img" src={img} alt="Skill card img" />
       <Center className="skills-card-name" mt={".5rem"}>
