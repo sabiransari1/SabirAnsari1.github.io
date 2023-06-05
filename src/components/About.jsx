@@ -55,11 +55,7 @@ export const About = () => {
         align={"center"}
         justify={"center"}
       >
-        <Image
-          src={SabirAnsari}
-          alt="Sabir Ansari"
-          w={"100%"}
-        />
+        <Image src={SabirAnsari} alt="Sabir Ansari" w={"100%"} />
 
         <Center>
           <Text>
@@ -130,6 +126,7 @@ export const About = () => {
 
         {/* second */}
         <UnorderedList
+          id="user-detail-intro"
           spacing={".5rem"}
           styleType={"square"}
           textAlign={"justify"}
