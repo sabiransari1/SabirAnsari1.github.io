@@ -149,8 +149,6 @@ export const Home = () => {
             xl: "60%",
             "2xl": "50%rem",
           }}
-          objectFit="cover"
-          aspectRatio={"auto"}
         />
 
         <Center>

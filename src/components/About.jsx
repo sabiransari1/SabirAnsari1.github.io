@@ -58,8 +58,6 @@ export const About = () => {
         <Image
           src={SabirAnsari}
           alt="Sabir Ansari"
-          objectFit="cover"
-          aspectRatio={"auto"}
         />
 
         <Center>
