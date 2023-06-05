@@ -13,7 +13,7 @@ export const SkillCard = ({ img, name }) => {
       }
       w={"100px"}
     >
-      <Image className="skills-card-img" src={img} alt="Skill card img" />
+      <Image className="skills-card-img" src={img} alt="Skill card img" w={"100%"}/>
       <Center className="skills-card-name" mt={".5rem"}>
         {name}
       </Center>
