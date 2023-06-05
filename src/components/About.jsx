@@ -58,6 +58,7 @@ export const About = () => {
         <Image
           src={SabirAnsari}
           alt="Sabir Ansari"
+          w={"100%"}
         />
 
         <Center>

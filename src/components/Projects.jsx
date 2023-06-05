@@ -127,6 +127,7 @@ export const Projects = () => {
             }
             borderRadius="10px"
             color={"#788097"}
+            w={"100%"}
           >
             <a href={el.live} target={"_blank"} rel="noreferrer noopener">
               <Image
