@@ -32,6 +32,7 @@ const other = [{ img: git, name: "Git" }];
 export const Skills = () => {
   return (
     <Box
+      id={"skills"}
       p={{
         base: "1rem 1rem",
         sm: "1rem 1rem",
@@ -40,7 +41,6 @@ export const Skills = () => {
         xl: "3rem 5rem",
         "2xl": "3rem 5rem",
       }}
-      id={"skills"}
     >
       {/* first */}
       <Box>

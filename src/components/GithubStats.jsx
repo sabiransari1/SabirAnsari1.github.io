@@ -6,7 +6,7 @@ export const GithubStats = ({ img1, img2, img3 }) => {
   return (
     <VStack spacing={"1rem"}>
       <Center>
-        <Image src={img1} />
+        <Image src={img1} id="github-top-langs" />
       </Center>
 
       <Flex
@@ -20,8 +20,8 @@ export const GithubStats = ({ img1, img2, img3 }) => {
           "2xl": "row",
         }}
       >
-        <Image src={img2} />
-        <Image src={img3} />
+        <Image src={img2} id="github-stats-card" />
+        <Image src={img3} id="github-streak-stats" />
       </Flex>
 
       <Center
