@@ -56,7 +56,7 @@ export const Home = () => {
             </Text>
           </Box>
 
-          <Box id="user-detail-intro" textAlign={"justify"} color={"#788097"}>
+          <Box textAlign={"justify"} color={"#788097"}>
             An enthusiastic solution-driven full-stack web developer with a
             creative mindset, skilled to use both front-end & back-end web
             development tools. Aiming to leverage once knowledge & build
