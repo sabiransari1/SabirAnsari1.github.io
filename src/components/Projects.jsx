@@ -185,7 +185,7 @@ export const Projects = () => {
               </a>
 
               <a href={el.live} target={"_blank"} rel="noreferrer noopener">
-                <button className="button roject-deployed-link">Live</button>
+                <button className="button project-deployed-link">Live</button>
               </a>
             </Flex>
           </Grid>

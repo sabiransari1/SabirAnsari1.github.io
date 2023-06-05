@@ -117,7 +117,6 @@ export const Home = () => {
 
       {/* right */}
       <Flex
-        className="home-img"
         w={{
           base: "100%",
           sm: "40%",
@@ -141,6 +140,7 @@ export const Home = () => {
         <Image
           src={AshleshaThakur}
           alt={"Sabir Ansari"}
+          className="home-img"
           w={{
             base: "80%",
             sm: "80%",
