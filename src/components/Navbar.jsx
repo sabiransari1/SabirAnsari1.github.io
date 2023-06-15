@@ -173,8 +173,7 @@ export const Navbar = () => {
             }}
             cursor={"pointer"}
             _hover={{
-              bgGradient:
-                "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
+              bgGradient: "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
               bgClip: "text",
             }}
           >
@@ -195,8 +194,7 @@ export const Navbar = () => {
             }}
             cursor={"pointer"}
             _hover={{
-              bgGradient:
-                "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
+              bgGradient: "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
               bgClip: "text",
             }}
           >
@@ -217,8 +215,7 @@ export const Navbar = () => {
             }}
             cursor={"pointer"}
             _hover={{
-              bgGradient:
-                "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
+              bgGradient: "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
               bgClip: "text",
             }}
           >
@@ -239,8 +236,7 @@ export const Navbar = () => {
             }}
             cursor={"pointer"}
             _hover={{
-              bgGradient:
-                "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
+              bgGradient: "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
               bgClip: "text",
             }}
           >
@@ -261,8 +257,7 @@ export const Navbar = () => {
             }}
             cursor={"pointer"}
             _hover={{
-              bgGradient:
-                "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
+              bgGradient: "linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)",
               bgClip: "text",
             }}
           >
@@ -274,6 +269,14 @@ export const Navbar = () => {
       {/* fourth */}
       <Box
         id="resume-button-1"
+        display={{
+          base: "none",
+          sm: "none",
+          md: "block",
+          lg: "block",
+          xl: "block",
+          "2xl": "block",
+        }}
         onClick={() => {
           window.open(
             "https://drive.google.com/file/d/1W33mGB_jZwOzgvqO93pYUejy4CVZ0L2C/view?usp=sharing"

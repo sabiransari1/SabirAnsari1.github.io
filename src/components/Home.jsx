@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Grid, Box, Image, Text, Center, VStack } from "@chakra-ui/react";
 import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
-import AshleshaThakur from "../assets/images/AshleshaThakur.jpg";
+import sabirAnsari from "../assets/images/sabirAnsari.png";
 import resume from "../assets/resume/Sabir-Ansari-Resume.pdf";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -57,10 +57,9 @@ export const Home = () => {
           </Box>
 
           <Box textAlign={"justify"} color={"#788097"}>
-            An enthusiastic solution-driven full-stack web developer with a
-            creative mindset, skilled to use both front-end & back-end web
-            development tools. Aiming to leverage once knowledge & build
-            world-class applications.
+            An enthusiastic solution-driven full-stack web developer with a creative mindset,
+            skilled to use both front-end & back-end web development tools. Aiming to leverage once
+            knowledge & build world-class applications.
           </Box>
         </Box>
 
@@ -81,11 +80,7 @@ export const Home = () => {
 
         {/* third */}
         <Flex>
-          <a
-            href="https://github.com/SabirAnsari1"
-            target={"_blank"}
-            rel="noreferrer noopener"
-          >
+          <a href="https://github.com/SabirAnsari1" target={"_blank"} rel="noreferrer noopener">
             <Image
               id="contact-github"
               src={github}
@@ -138,17 +133,11 @@ export const Home = () => {
         justify={"center"}
       >
         <Image
-          src={AshleshaThakur}
+          src={sabirAnsari}
           alt={"Sabir Ansari"}
+          borderRadius={"5px"}
           className="home-img"
-          w={{
-            base: "80%",
-            sm: "80%",
-            md: "70%",
-            lg: "60%",
-            xl: "60%",
-            "2xl": "50%rem",
-          }}
+          w={"80%"}
         />
 
         <Center>
