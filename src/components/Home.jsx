@@ -32,11 +32,11 @@ export const Home = () => {
         gap={"1rem"}
         w={{
           base: "100%",
-          sm: "60%",
-          md: "60%",
-          lg: "60%",
-          xl: "60%",
-          "2xl": "60%",
+          sm: "50%",
+          md: "50%",
+          lg: "50%",
+          xl: "50%",
+          "2xl": "50%",
         }}
       >
         {/* first */}
@@ -114,11 +114,11 @@ export const Home = () => {
       <Flex
         w={{
           base: "100%",
-          sm: "40%",
-          md: "40%",
-          lg: "40%",
-          xl: "40%",
-          "2xl": "40%",
+          sm: "50%",
+          md: "50%",
+          lg: "50%",
+          xl: "50%",
+          "2xl": "50%",
         }}
         p={{
           base: "2rem",
@@ -137,7 +137,14 @@ export const Home = () => {
           alt={"Sabir Ansari"}
           borderRadius={"5px"}
           className="home-img"
-          w={"80%"}
+          w={{
+            base: "90%",
+            sm: "90%",
+            md: "90%",
+            lg: "70%",
+            xl: "70%",
+            "2xl": "70%",
+          }}
         />
 
         <Center>

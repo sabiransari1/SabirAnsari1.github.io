@@ -1,14 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import {
-  Box,
-  Flex,
-  Text,
-  Grid,
-  Image,
-  Center,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Box, Flex, Text, Grid, Image, Center, useColorMode } from "@chakra-ui/react";
 import zoomcar from "../assets/images/zoomcar.png";
 import apnamart from "../assets/images/apnamart.png";
 import todo from "../assets/images/todo.png";
@@ -54,7 +46,7 @@ export const Projects = () => {
 
   return (
     <Box
-    id="projects"
+      id="projects"
       p={{
         base: "1rem 1rem",
         sm: "1rem 1rem",
@@ -122,9 +114,9 @@ export const Projects = () => {
               "2xl": "3rem",
             }}
             gap={".5rem"}
-            boxShadow={
-              "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset"
-            }
+            // boxShadow={
+            //   "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset"
+            // }
             borderRadius="10px"
             color={"#788097"}
             w={"100%"}
@@ -139,7 +131,7 @@ export const Projects = () => {
                 transition="transform .5s"
                 _hover={{
                   cursor: "pointer",
-                  transform: "scale(0.8)",
+                  transform: "scale(0.9)",
                 }}
               />
             </a>

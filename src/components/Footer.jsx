@@ -20,7 +20,9 @@ export const Footer = () => {
       align={"center"}
       gap={"1rem"}
     >
-      <Text>Designed and build by Sabir Ansari, 2023 All rights reserved.</Text>
+      <Text textAlign={"center"}>
+        Designed and build by Sabir Ansari, 2023 All rights reserved.
+      </Text>
     </Flex>
   );
 };
