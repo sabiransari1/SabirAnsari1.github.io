@@ -36,8 +36,8 @@ const projects = [
     title: "CRUD Dashboard",
     desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs.",
     stack: "HTML, CSS, javascript, React ,Chakra-UI",
-    codebase: "https://github.com/SabirAnsari1/crud-dashboard",
-    live: "SabirAnsari1.github.io",
+    codebase: "https://github.com/SabirAnsari1/dashboard",
+    live: "https://dashboard-sabiransari1.vercel.app/",
   },
 ];
 
