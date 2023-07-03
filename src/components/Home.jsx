@@ -68,7 +68,7 @@ export const Home = () => {
           id="resume-button-2"
           onClick={() => {
             window.open(
-              "https://drive.google.com/file/d/1PMGJJr_CGqcM9V45__yOIs6sAdZ3Cdjg/view?usp=sharing"
+              "https://drive.google.com/file/d/1_hzxJF851EKhQNm2lpMVyH9AUDwAgRxn/view?usp=sharing"
             );
           }}
         >
