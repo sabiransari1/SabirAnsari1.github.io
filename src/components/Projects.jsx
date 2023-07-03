@@ -29,7 +29,7 @@ const projects = [
     desc: "A Todo Application, It allows users to effortlessly manage their tasks and events, helping them stay organized and on top.",
     stack: "HTML, CSS, javascript, React ,Chakra-UI",
     codebase: "https://github.com/SabirAnsari1/todo-application",
-    live: "SabirAnsari1.github.io",
+    live: "https://todo-application-sabiransari1.vercel.app/",
   },
   {
     img: dashboard,
