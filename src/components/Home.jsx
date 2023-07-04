@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Grid, Box, Image, Text, Center, VStack } from "@chakra-ui/react";
+import { Flex, Grid, Box, Image, Text, Center } from "@chakra-ui/react";
 import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import sabirAnsari from "../assets/images/sabirAnsari.png";
@@ -80,7 +80,7 @@ export const Home = () => {
 
         {/* third */}
         <Flex>
-          <a href="https://github.com/SabirAnsari1" target={"_blank"} rel="noreferrer noopener">
+          <a href="https://github.com/sabiransari1" target={"_blank"} rel="noreferrer noopener">
             <Image
               id="contact-github"
               src={github}

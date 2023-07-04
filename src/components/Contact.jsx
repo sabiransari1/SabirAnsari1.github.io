@@ -100,7 +100,7 @@ export const Contact = () => {
         {/* second */}
         {/* first */}
         <VStack spacing={"1rem"}>
-          <a href="https://github.com/SabirAnsari1" target={"_blank"} rel="noreferrer noopener">
+          <a href="https://github.com/sabiransari1" target={"_blank"} rel="noreferrer noopener">
             <Button
               id="contact-github"
               leftIcon={<FaGithub />}
@@ -114,7 +114,7 @@ export const Contact = () => {
                 "2xl": "lg",
               }}
             >
-              SabirAnsari1
+              sabiransari1
             </Button>
           </a>
 

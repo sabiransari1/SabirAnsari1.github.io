@@ -12,7 +12,7 @@ const projects = [
     title: "Zoomcar Clone",
     desc: "Zoomcar is an e-commerce car rental platform.",
     stack: "HTML, CSS, javascript",
-    codebase: "https://github.com/SabirAnsari1/tasteless-horse-2112",
+    codebase: "https://github.com/sabiransari1/tasteless-horse-2112",
     live: "https://zoom-car.netlify.app/",
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     title: "Todo Application",
     desc: "A Todo Application, It allows users to effortlessly manage their tasks and events, helping them stay organized and on top.",
     stack: "HTML, CSS, javascript, React ,Chakra-UI",
-    codebase: "https://github.com/SabirAnsari1/todo-application",
+    codebase: "https://github.com/sabiransari1/todo-application",
     live: "https://todo-application-sabiransari1.vercel.app/",
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     title: "CRUD Dashboard",
     desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs.",
     stack: "HTML, CSS, javascript, React ,Chakra-UI",
-    codebase: "https://github.com/SabirAnsari1/dashboard",
+    codebase: "https://github.com/sabiransari1/dashboard",
     live: "https://dashboard-sabiransari1.vercel.app/",
   },
 ];

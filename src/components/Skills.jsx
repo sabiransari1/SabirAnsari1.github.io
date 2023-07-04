@@ -29,6 +29,7 @@ const skills = [
 
 export const Skills = () => {
   const [filterSkills, setFilterSkills] = useState(skills);
+  const [type, setType] = useState("all");
 
   const skillsFilter = (e) => {
     const { value } = e.target;
@@ -36,6 +37,7 @@ export const Skills = () => {
     const filterSkillsX = skills.filter((el) => el.type === value);
 
     setFilterSkills(filterSkillsX.length === 0 ? skills : filterSkillsX);
+    setType(value);
   };
 
   return (
@@ -88,7 +90,7 @@ export const Skills = () => {
         {/* 1.2 */}
         <Flex direction={"column"}>
           {/* 1.1.1 */}
-          <Flex gap={"1rem"}>
+          <Flex gap={"1rem"} mb={"1rem"}>
             <Button
               variant="solid"
               size={{
@@ -99,6 +101,7 @@ export const Skills = () => {
                 xl: "lg",
                 "2xl": "lg",
               }}
+              color={type === "all" ? "#fdc50f" : ""}
               onClick={skillsFilter}
               value={"all"}
             >
@@ -115,6 +118,7 @@ export const Skills = () => {
                 xl: "lg",
                 "2xl": "lg",
               }}
+              color={type === "frontend" ? "#fdc50f" : ""}
               onClick={skillsFilter}
               value={"frontend"}
             >
@@ -131,6 +135,7 @@ export const Skills = () => {
                 xl: "lg",
                 "2xl": "lg",
               }}
+              color={type === "backend" ? "#fdc50f" : ""}
               onClick={skillsFilter}
               value={"backend"}
             >
@@ -147,6 +152,7 @@ export const Skills = () => {
                 xl: "lg",
                 "2xl": "lg",
               }}
+              color={type === "others" ? "#fdc50f" : ""}
               onClick={skillsFilter}
               value={"others"}
             >
