@@ -159,7 +159,7 @@ export const Projects = () => {
               {el.desc}
             </Text>
 
-            <Text className="project-tech-stack">
+            <Box className="project-tech-stack">
               <Text
                 bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
                 bgClip="text"
@@ -168,7 +168,7 @@ export const Projects = () => {
                 Tech Stack :-{" "}
               </Text>
               <Text display={"inline"}>{el.stack} </Text>
-            </Text>
+            </Box>
 
             <Flex justify={"space-between"}>
               <a href={el.codebase} target={"_blank"} rel="noreferrer noopener">
