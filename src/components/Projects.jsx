@@ -159,17 +159,16 @@ export const Projects = () => {
               {el.desc}
             </Text>
 
-            <Flex>
+            <Text className="project-tech-stack">
               <Text
-                className="project-tech-stack"
                 bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
                 bgClip="text"
-                mr={".6rem"}
+                display={"inline"}
               >
                 Tech Stack :-{" "}
               </Text>
-              <Text>{el.stack}</Text>
-            </Flex>
+              <Text display={"inline"}>{el.stack} </Text>
+            </Text>
 
             <Flex justify={"space-between"}>
               <a href={el.codebase} target={"_blank"} rel="noreferrer noopener">

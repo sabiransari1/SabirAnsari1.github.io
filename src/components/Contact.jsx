@@ -16,12 +16,7 @@ import {
 import { Toast } from "./Toast";
 import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaPhoneAlt,
-  FaRegEnvelope,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaPhoneAlt, FaRegEnvelope } from "react-icons/fa";
 
 export const Contact = () => {
   const form = useRef();
@@ -30,24 +25,17 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_avqb6rt",
-        "template_rzdfxwc",
-        form.current,
-        "L_kKOvVTY1BohKxbV"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
-          setStatus(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setStatus(false);
-        }
-      );
+    emailjs.sendForm("service_avqb6rt", "template_rzdfxwc", form.current, "L_kKOvVTY1BohKxbV").then(
+      (result) => {
+        console.log(result.text);
+        e.target.reset();
+        setStatus(true);
+      },
+      (error) => {
+        console.log(error.text);
+        setStatus(false);
+      }
+    );
     setStatus(null);
   };
 
@@ -112,17 +100,13 @@ export const Contact = () => {
         {/* second */}
         {/* first */}
         <VStack spacing={"1rem"}>
-          <a
-            href="https://github.com/SabirAnsari1"
-            target={"_blank"}
-            rel="noreferrer noopener"
-          >
+          <a href="https://github.com/SabirAnsari1" target={"_blank"} rel="noreferrer noopener">
             <Button
               id="contact-github"
               leftIcon={<FaGithub />}
               variant="solid"
               size={{
-                base: "xs",
+                base: "sm",
                 sm: "sm",
                 md: "md",
                 lg: "md",
@@ -144,7 +128,7 @@ export const Contact = () => {
               leftIcon={<FaLinkedin />}
               variant="solid"
               size={{
-                base: "xs",
+                base: "sm",
                 sm: "sm",
                 md: "md",
                 lg: "md",
@@ -162,7 +146,7 @@ export const Contact = () => {
             variant="solid"
             cursor={"default"}
             size={{
-              base: "xs",
+              base: "sm",
               sm: "sm",
               md: "md",
               lg: "md",
@@ -179,7 +163,7 @@ export const Contact = () => {
             variant="solid"
             cursor={"default"}
             size={{
-              base: "xs",
+              base: "sm",
               sm: "sm",
               md: "md",
               lg: "md",
@@ -232,13 +216,7 @@ export const Contact = () => {
       </Flex>
 
       {/* second */}
-      {status === null ? (
-        ""
-      ) : status ? (
-        <Toast status={status} />
-      ) : (
-        <Toast status={status} />
-      )}
+      {status === null ? "" : status ? <Toast status={status} /> : <Toast status={status} />}
     </Box>
   );
 };

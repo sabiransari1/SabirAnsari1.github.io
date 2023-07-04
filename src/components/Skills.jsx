@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Flex, Grid, Text, Image, Center } from "@chakra-ui/react";
+import React, { useState } from "react";
+import { Box, Flex, Grid, Text, Image, Center, Button } from "@chakra-ui/react";
 import html from "../assets/images/html.png";
 import css from "../assets/images/css.png";
 import javascript from "../assets/images/javascript.png";
@@ -13,23 +13,31 @@ import mongodb from "../assets/images/mongodb.png";
 import git from "../assets/images/git.png";
 import { SkillCard } from "./SkillCard";
 
-const frontend = [
-  { img: html, name: "HTML" },
-  { img: css, name: "CSS" },
-  { img: javascript, name: "JavaScript" },
-  { img: react, name: "React" },
-  { img: redux, name: "Redux" },
-  { img: typescript, name: "TypeScript" },
-  { img: chakra, name: "Chakra-UI" },
+const skills = [
+  { img: html, name: "HTML", type: "frontend" },
+  { img: css, name: "CSS", type: "frontend" },
+  { img: javascript, name: "JavaScript", type: "frontend" },
+  { img: react, name: "React", type: "frontend" },
+  { img: redux, name: "Redux", type: "frontend" },
+  { img: typescript, name: "TypeScript", type: "frontend" },
+  { img: chakra, name: "Chakra-UI", type: "frontend" },
+  { img: nodejs, name: "Node.js", type: "backend" },
+  { img: express, name: "Express", type: "backend" },
+  { img: mongodb, name: "MongoDB", type: "backend" },
+  { img: git, name: "Git", type: "others" },
 ];
-const backend = [
-  { img: nodejs, name: "Node.js" },
-  { img: express, name: "Express" },
-  { img: mongodb, name: "MongoDB" },
-];
-const other = [{ img: git, name: "Git" }];
 
 export const Skills = () => {
+  const [filterSkills, setFilterSkills] = useState(skills);
+
+  const skillsFilter = (e) => {
+    const { value } = e.target;
+
+    const filterSkillsX = skills.filter((el) => el.type === value);
+
+    setFilterSkills(filterSkillsX.length === 0 ? skills : filterSkillsX);
+  };
+
   return (
     <Box
       id={"skills"}
@@ -42,8 +50,9 @@ export const Skills = () => {
         "2xl": "3rem 5rem",
       }}
     >
-      {/* first */}
+      {/* 1.1 */}
       <Box>
+        {/* 1.1 */}
         <Flex>
           <Text
             fontSize={{
@@ -76,130 +85,94 @@ export const Skills = () => {
           </Text>
         </Flex>
 
-        {/* second */}
-        <Grid
-          templateColumns={{
-            base: "repeat(1,1fr)",
-            sm: "repeat(2,1fr)",
-            md: "repeat(2,1fr)",
-            lg: "repeat(2,1fr)",
-            xl: "repeat(2,1fr)",
-            "2xl": "repeat(2,1fr)",
-          }}
-          gap={"2rem"}
-          p={{
-            base: "0 1rem",
-            sm: "0 1rem",
-            md: "0 2rem",
-            lg: "0 4rem",
-            xl: "0 5rem",
-            "2xl": "0 5rem",
-          }}
-        >
-          <Box>
-            <Text
-              fontSize={{
-                base: "3xl",
-                sm: "3xl",
-                md: "4xl",
-                lg: "4xl",
-                xl: "4xl",
-                "2xl": "4xl",
+        {/* 1.2 */}
+        <Flex direction={"column"}>
+          {/* 1.1.1 */}
+          <Flex gap={"1rem"}>
+            <Button
+              variant="solid"
+              size={{
+                base: "sm",
+                sm: "sm",
+                md: "md",
+                lg: "md",
+                xl: "lg",
+                "2xl": "lg",
               }}
-              fontWeight={"bold"}
-              bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
-              bgClip="text"
+              onClick={skillsFilter}
+              value={"all"}
+            >
+              All
+            </Button>
+
+            <Button
+              variant="solid"
+              size={{
+                base: "sm",
+                sm: "sm",
+                md: "md",
+                lg: "md",
+                xl: "lg",
+                "2xl": "lg",
+              }}
+              onClick={skillsFilter}
+              value={"frontend"}
             >
               Frontend
-            </Text>
+            </Button>
 
+            <Button
+              variant="solid"
+              size={{
+                base: "sm",
+                sm: "sm",
+                md: "md",
+                lg: "md",
+                xl: "lg",
+                "2xl": "lg",
+              }}
+              onClick={skillsFilter}
+              value={"backend"}
+            >
+              Backend
+            </Button>
+
+            <Button
+              variant="solid"
+              size={{
+                base: "sm",
+                sm: "sm",
+                md: "md",
+                lg: "md",
+                xl: "lg",
+                "2xl": "lg",
+              }}
+              onClick={skillsFilter}
+              value={"others"}
+            >
+              Others
+            </Button>
+          </Flex>
+
+          {/* 1.1.2 */}
+          <Box>
             <Grid
               templateColumns={{
                 base: "repeat(2,1fr)",
-                sm: "repeat(2,1fr)",
-                md: "repeat(3,1fr)",
-                lg: "repeat(3,1fr)",
-                xl: "repeat(4,1fr)",
-                "2xl": "repeat(5,1fr)",
+                sm: "repeat(4,1fr)",
+                md: "repeat(6,1fr)",
+                lg: "repeat(6,1fr)",
+                xl: "repeat(8,1fr)",
+                "2xl": "repeat(8,1fr)",
               }}
               gap={"1rem"}
             >
-              {frontend?.map((el, index) => (
+              {filterSkills?.map((el, index) => (
                 <SkillCard key={index} {...el} />
               ))}
             </Grid>
           </Box>
-
-          <Box>
-            <Box>
-              <Text
-                fontSize={{
-                  base: "3xl",
-                  sm: "3xl",
-                  md: "4xl",
-                  lg: "4xl",
-                  xl: "4xl",
-                  "2xl": "4xl",
-                }}
-                fontWeight={"bold"}
-                bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
-                bgClip="text"
-              >
-                Backend
-              </Text>
-
-              <Grid
-                templateColumns={{
-                  base: "repeat(2,1fr)",
-                  sm: "repeat(2,1fr)",
-                  md: "repeat(2,1fr)",
-                  lg: "repeat(3,1fr)",
-                  xl: "repeat(4,1fr)",
-                  "2xl": "repeat(5,1fr)",
-                }}
-                gap={"1rem"}
-              >
-                {backend?.map((el, index) => (
-                  <SkillCard key={index} {...el} />
-                ))}
-              </Grid>
-            </Box>
-
-            <Box>
-              <Text
-                fontSize={{
-                  base: "3xl",
-                  sm: "3xl",
-                  md: "4xl",
-                  lg: "4xl",
-                  xl: "4xl",
-                  "2xl": "4xl",
-                }}
-                fontWeight={"bold"}
-                bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
-                bgClip="text"
-              >
-                Other
-              </Text>
-
-              <Grid
-                templateColumns={{
-                  base: "repeat(2,1fr)",
-                  sm: "repeat(2,1fr)",
-                  md: "repeat(2,1fr)",
-                  lg: "repeat(3,1fr)",
-                  xl: "repeat(4,1fr)",
-                  "2xl": "repeat(5,1fr)",
-                }}
-                gap={"1rem"}
-              >
-                {other?.map((el, index) => (
-                  <SkillCard key={index} {...el} />
-                ))}
-              </Grid>
-            </Box>
-          </Box>
-        </Grid>
+        </Flex>
       </Box>
     </Box>
   );
