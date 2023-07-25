@@ -151,7 +151,7 @@ export const About = () => {
           <ListItem>
             I'm a passionate Developer, with strong administrative and
             communication skills, good attention to detail and the ability to
-            write efficient code using MERN Stack with typescript.
+            write efficient code using MERN Stack with javascript & typescript,
           </ListItem>
 
           <ListItem>
