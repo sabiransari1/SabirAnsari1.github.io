@@ -12,7 +12,7 @@ const projects = [
     title: "Zoomcar Clone",
     desc: "Zoomcar is an e-commerce car rental platform.",
     stack: "HTML, CSS, javascript",
-    codebase: "https://github.com/sabiransari1/tasteless-horse-2112",
+    codebase: "https://github.com/sabiransari1/zoomcar",
     live: "https://zoom-car.netlify.app/",
   },
   {
