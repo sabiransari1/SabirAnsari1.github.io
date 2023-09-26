@@ -1,6 +1,14 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { Box, Flex, Text, Grid, Image, Center, useColorMode } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Text,
+  Grid,
+  Image,
+  Center,
+  useColorMode,
+} from "@chakra-ui/react";
 import zoomcar from "../assets/images/zoomcar.png";
 import apnamart from "../assets/images/apnamart.png";
 import todo from "../assets/images/todo.png";
@@ -27,7 +35,7 @@ const projects = [
     img: todo,
     title: "Todo Application",
     desc: "A Todo Application, It allows users to effortlessly manage their tasks and events, helping them stay organized and on top.",
-    stack: "HTML, CSS, javascript, React ,Chakra-UI",
+    stack: "HTML, CSS, javascript, React.js, Chakra-UI",
     codebase: "https://github.com/sabiransari1/todo-application",
     live: "https://todo-application-sabiransari1.vercel.app/",
   },
@@ -35,7 +43,7 @@ const projects = [
     img: dashboard,
     title: "CRUD Dashboard",
     desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs.",
-    stack: "HTML, CSS, javascript, React ,Chakra-UI",
+    stack: "HTML, CSS, javascript, React.js, Chakra-UI, Json-Server",
     codebase: "https://github.com/sabiransari1/dashboard",
     live: "https://dashboard-sabiransari1.vercel.app/",
   },
