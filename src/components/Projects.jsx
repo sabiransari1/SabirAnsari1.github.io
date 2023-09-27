@@ -9,43 +9,45 @@ import {
   Center,
   useColorMode,
 } from "@chakra-ui/react";
-import zoomcar from "../assets/images/zoomcar.png";
-import apnamart from "../assets/images/apnamart.png";
 import todo from "../assets/images/todo.png";
+import admin_dashboard from "../assets/images/admin_dashboard.png";
 import dashboard from "../assets/images/dashboard.png";
+import safar from "../assets/images/safar.png";
 
 const projects = [
-  {
-    img: zoomcar,
-    title: "Zoomcar Clone",
-    desc: "Zoomcar is an e-commerce car rental platform.",
-    stack: "HTML, CSS, javascript",
-    codebase: "https://github.com/sabiransari1/zoomcar",
-    live: "https://zoom-car.netlify.app/",
-  },
-  {
-    img: apnamart,
-    title: "IndiaMart Clone",
-    desc: "ApnaMART is inspired by IndiaMART, IndiaMART connecting buyers with suppliers as well as individual customers.",
-    stack: "HTML, CSS, javascript",
-    codebase: "https://github.com/sinnu1908/radioactive-song-3321",
-    live: "https://aapnamart.netlify.app/",
-  },
   {
     img: todo,
     title: "Todo Application",
     desc: "A Todo Application, It allows users to effortlessly manage their tasks and events, helping them stay organized and on top.",
-    stack: "HTML, CSS, javascript, React.js, Chakra-UI",
+    stack: "HTML, CSS, JavaScript, React.js, Chakra-UI",
     codebase: "https://github.com/sabiransari1/todo-application",
-    live: "https://todo-application-sabiransari1.vercel.app/",
+    live: "https://todo-application-sabiransari1.vercel.app",
+  },
+  {
+    img: admin_dashboard,
+    title: "Admin Dashboard",
+    desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs with chart presentation.",
+    stack:
+      "HTML, CSS, JavaScript, React.js, Redux, Chakra-UI, Json-Server, Chart.js",
+    codebase: "https://github.com/sabiransari1/admin-dashboard",
+    live: "https://admin-dashboard-sabiransari1.vercel.app",
   },
   {
     img: dashboard,
     title: "CRUD Dashboard",
     desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs.",
-    stack: "HTML, CSS, javascript, React.js, Chakra-UI, Json-Server",
+    stack: "HTML, CSS, JavaScript, React.js, Redux, Chakra-UI, Json-Server",
     codebase: "https://github.com/sabiransari1/dashboard",
-    live: "https://dashboard-sabiransari1.vercel.app/",
+    live: "https://dashboard-sabiransari1.vercel.app",
+  },
+  {
+    img: safar,
+    title: "SAFAR",
+    desc: "SAFAR an online hotel booking platform that allows users to book hotels all over the world.",
+    stack:
+      "HTML, CSS, JavaScript, React.js, Redux, Chakra-UI, TypeScript, Json-Server",
+    codebase: "https://github.com/sabiransari1/safar",
+    live: "https://safar-sabiransari1.vercel.app",
   },
 ];
 
