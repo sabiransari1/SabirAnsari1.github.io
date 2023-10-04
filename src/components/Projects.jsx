@@ -28,7 +28,7 @@ const projects = [
     title: "Admin Dashboard",
     desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs with chart presentation.",
     stack:
-      "HTML, CSS, JavaScript, React.js, Redux, Chakra-UI, Json-Server, Chart.js",
+      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Chakra-UI, Json-Server, Chart.js, React-Chartjs-2",
     codebase: "https://github.com/sabiransari1/admin-dashboard",
     live: "https://admin-dashboard-sabiransari1.vercel.app",
   },
@@ -36,7 +36,8 @@ const projects = [
     img: dashboard,
     title: "CRUD Dashboard",
     desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs.",
-    stack: "HTML, CSS, JavaScript, React.js, Redux, Chakra-UI, Json-Server",
+    stack:
+      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Chakra-UI, Json-Server",
     codebase: "https://github.com/sabiransari1/dashboard",
     live: "https://dashboard-sabiransari1.vercel.app",
   },
@@ -45,7 +46,7 @@ const projects = [
     title: "SAFAR",
     desc: "SAFAR an online hotel booking platform that allows users to book hotels all over the world.",
     stack:
-      "HTML, CSS, JavaScript, React.js, Redux, Chakra-UI, TypeScript, Json-Server",
+      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Chakra-UI, TypeScript",
     codebase: "https://github.com/sabiransari1/safar",
     live: "https://safar-sabiransari1.vercel.app",
   },
