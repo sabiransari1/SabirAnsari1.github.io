@@ -19,36 +19,36 @@ const projects = [
     img: todo,
     title: "Todo Application",
     desc: "A Todo Application, It allows users to effortlessly manage their tasks and events, helping them stay organized and on top.",
-    stack: "HTML, CSS, JavaScript, React.js, Chakra-UI",
+    stack: "HTML, CSS, JavaScript, LocalStorage, React.js, Chakra-UI",
     codebase: "https://github.com/sabiransari1/todo-application",
-    live: "https://todo-application-sabiransari1.vercel.app",
+    live: "https://todo-application-sabiransari1.vercel.app/",
   },
   {
     img: admin_dashboard,
     title: "Admin Dashboard",
     desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs with chart presentation.",
     stack:
-      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Chakra-UI, Json-Server, Chart.js, React-Chartjs-2",
+      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, MVC-architecture, Chakra-UI, Json-Server, Chart.js, React-Chartjs-2",
     codebase: "https://github.com/sabiransari1/admin-dashboard",
-    live: "https://admin-dashboard-sabiransari1.vercel.app",
+    live: "https://admin-dashboard-sabiransari1.vercel.app/",
   },
   {
     img: dashboard,
     title: "CRUD Dashboard",
     desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs.",
     stack:
-      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Chakra-UI, Json-Server",
+      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, MVC-architecture, Chakra-UI, Json-Server",
     codebase: "https://github.com/sabiransari1/dashboard",
-    live: "https://dashboard-sabiransari1.vercel.app",
+    live: "https://dashboard-sabiransari1.vercel.app/",
   },
   {
     img: safar,
     title: "SAFAR",
     desc: "SAFAR an online hotel booking platform that allows users to book hotels all over the world.",
     stack:
-      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Chakra-UI, TypeScript",
+      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, MVC-architecture, Chakra-UI, TypeScript",
     codebase: "https://github.com/sabiransari1/safar",
-    live: "https://safar-sabiransari1.vercel.app",
+    live: "https://safar-sabiransari1.vercel.app/",
   },
 ];
 
