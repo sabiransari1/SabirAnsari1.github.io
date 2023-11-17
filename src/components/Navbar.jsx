@@ -276,7 +276,7 @@ export const Navbar = () => {
         }}
         onClick={() => {
           window.open(
-            "https://drive.google.com/file/d/11eQecwlxi1ES8GgkS7Zi9qRQoD93jvlJ/view?usp=sharing"
+            'https://drive.google.com/file/d/1Rg4KkQBLYIYoNuhP6TtLmRmb0RptdqNT/view?usp=sharing'
           );
         }}
       >

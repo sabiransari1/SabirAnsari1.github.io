@@ -17,7 +17,7 @@ const skills = [
   { img: html, name: "HTML", type: "frontend" },
   { img: css, name: "CSS", type: "frontend" },
   { img: javascript, name: "JavaScript", type: "frontend" },
-  { img: react, name: "React", type: "frontend" },
+  { img: react, name: "React.js", type: "frontend" },
   { img: redux, name: "Redux", type: "frontend" },
   { img: typescript, name: "TypeScript", type: "frontend" },
   { img: chakra, name: "Chakra-UI", type: "frontend" },
