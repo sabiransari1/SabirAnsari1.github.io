@@ -281,7 +281,7 @@ export const Navbar = () => {
         }}
         onClick={() => {
           window.open(
-            'https://drive.google.com/file/d/1rP6gLNhHjeqTRtcApa2yPUU1DHvWyXYP/view?usp=sharing'
+            'https://drive.google.com/file/d/1rP6gLNhHjeqTRtcApa2yPUU1DHvWyXYP/view'
           );
         }}
       >
