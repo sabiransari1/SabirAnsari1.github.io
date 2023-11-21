@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
-import { Link } from "react-scroll";
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from 'react';
+import { Link } from 'react-scroll';
+import emailjs from '@emailjs/browser';
 import {
   Flex,
   Text,
@@ -12,11 +12,16 @@ import {
   Image,
   IconButton,
   Button,
-} from "@chakra-ui/react";
-import { Toast } from "./Toast";
-import github from "../assets/images/github.png";
-import linkedin from "../assets/images/linkedin.png";
-import { FaGithub, FaLinkedin, FaPhoneAlt, FaRegEnvelope } from "react-icons/fa";
+} from '@chakra-ui/react';
+import { Toast } from './Toast';
+import github from '../assets/images/github.png';
+import linkedin from '../assets/images/linkedin.png';
+import {
+  FaGithub,
+  FaLinkedin,
+  FaPhoneAlt,
+  FaRegEnvelope,
+} from 'react-icons/fa';
 
 export const Contact = () => {
   const form = useRef();
@@ -25,71 +30,79 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_avqb6rt", "template_rzdfxwc", form.current, "L_kKOvVTY1BohKxbV").then(
-      (result) => {
-        console.log(result.text);
-        e.target.reset();
-        setStatus(true);
-      },
-      (error) => {
-        console.log(error.text);
-        setStatus(false);
-      }
-    );
+    setStatus(null);
+    emailjs
+      .sendForm(
+        'service_avqb6rt',
+        'template_rzdfxwc',
+        form.current,
+        'L_kKOvVTY1BohKxbV'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+          setStatus(true);
+        },
+        (error) => {
+          console.log(error.text);
+          setStatus(false);
+        }
+      );
     setStatus(null);
   };
 
   return (
     <Box
-      id={"contact"}
+      id={'contact'}
       p={{
-        base: "1rem 1rem",
-        sm: "1rem 1rem",
-        md: "1rem 2rem",
-        lg: "3rem 5rem",
-        xl: "3rem 5rem",
-        "2xl": "3rem 5rem",
+        base: '1rem 1rem',
+        sm: '1rem 1rem',
+        md: '1rem 2rem',
+        lg: '3rem 5rem',
+        xl: '3rem 5rem',
+        '2xl': '3rem 5rem',
       }}
     >
       {/* first */}
       <Flex
-        align={"center"}
-        justify={"space-between"}
+        align={'center'}
+        justify={'space-between'}
         direction={{
-          base: "column",
-          sm: "column",
-          md: "row",
-          lg: "row",
-          xl: "row",
-          "2xl": "row",
+          base: 'column',
+          sm: 'column',
+          md: 'row',
+          lg: 'row',
+          xl: 'row',
+          '2xl': 'row',
         }}
-        gap={"1rem"}
+        gap={'1rem'}
       >
         {/* first */}
         <Box>
           <Text
             fontSize={{
-              base: "3xl",
-              sm: "3xl",
-              md: "4xl",
-              lg: "4xl",
-              xl: "4xl",
-              "2xl": "4xl",
+              base: '3xl',
+              sm: '3xl',
+              md: '4xl',
+              lg: '4xl',
+              xl: '4xl',
+              '2xl': '4xl',
             }}
-            fontWeight={"bold"}
+            fontWeight={'bold'}
           >
             Get in Touch
           </Text>
           <Text
             fontSize={{
-              base: "3xl",
-              sm: "3xl",
-              md: "4xl",
-              lg: "4xl",
-              xl: "4xl",
-              "2xl": "4xl",
+              base: '3xl',
+              sm: '3xl',
+              md: '4xl',
+              lg: '4xl',
+              xl: '4xl',
+              '2xl': '4xl',
             }}
-            fontWeight={"bold"}
+            fontWeight={'bold'}
             bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
             bgClip="text"
           >
@@ -99,19 +112,23 @@ export const Contact = () => {
 
         {/* second */}
         {/* first */}
-        <VStack spacing={"1rem"}>
-          <a href="https://github.com/sabiransari1" target={"_blank"} rel="noreferrer noopener">
+        <VStack spacing={'1rem'}>
+          <a
+            href="https://github.com/sabiransari1"
+            target={'_blank'}
+            rel="noreferrer noopener"
+          >
             <Button
               id="contact-github"
               leftIcon={<FaGithub />}
               variant="solid"
               size={{
-                base: "sm",
-                sm: "sm",
-                md: "md",
-                lg: "md",
-                xl: "lg",
-                "2xl": "lg",
+                base: 'sm',
+                sm: 'sm',
+                md: 'md',
+                lg: 'md',
+                xl: 'lg',
+                '2xl': 'lg',
               }}
             >
               sabiransari1
@@ -120,7 +137,7 @@ export const Contact = () => {
 
           <a
             href="https://www.linkedin.com/in/sabir-ansari-33b275257/"
-            target={"_blank"}
+            target={'_blank'}
             rel="noreferrer noopener"
           >
             <Button
@@ -128,12 +145,12 @@ export const Contact = () => {
               leftIcon={<FaLinkedin />}
               variant="solid"
               size={{
-                base: "sm",
-                sm: "sm",
-                md: "md",
-                lg: "md",
-                xl: "lg",
-                "2xl": "lg",
+                base: 'sm',
+                sm: 'sm',
+                md: 'md',
+                lg: 'md',
+                xl: 'lg',
+                '2xl': 'lg',
               }}
             >
               Sabir Ansari
@@ -144,14 +161,14 @@ export const Contact = () => {
             id="contact-phone"
             leftIcon={<FaPhoneAlt />}
             variant="solid"
-            cursor={"default"}
+            cursor={'default'}
             size={{
-              base: "sm",
-              sm: "sm",
-              md: "md",
-              lg: "md",
-              xl: "lg",
-              "2xl": "lg",
+              base: 'sm',
+              sm: 'sm',
+              md: 'md',
+              lg: 'md',
+              xl: 'lg',
+              '2xl': 'lg',
             }}
           >
             +91 9560925661
@@ -161,14 +178,14 @@ export const Contact = () => {
             id="contact-email"
             leftIcon={<FaRegEnvelope />}
             variant="solid"
-            cursor={"default"}
+            cursor={'default'}
             size={{
-              base: "sm",
-              sm: "sm",
-              md: "md",
-              lg: "md",
-              xl: "lg",
-              "2xl": "lg",
+              base: 'sm',
+              sm: 'sm',
+              md: 'md',
+              lg: 'md',
+              xl: 'lg',
+              '2xl': 'lg',
             }}
           >
             ansariisabir1@gmail.com
@@ -177,7 +194,7 @@ export const Contact = () => {
 
         {/* second */}
         <form ref={form} onSubmit={sendEmail}>
-          <VStack w={"100%"} spacing={"1rem"}>
+          <VStack w={'100%'} spacing={'1rem'}>
             <Input
               type="text"
               name="name"
@@ -185,7 +202,7 @@ export const Contact = () => {
               variant="Outline"
               size="lg"
               required
-              border={"5px solid orange"}
+              border={'5px solid orange'}
             />
 
             <Input
@@ -195,7 +212,7 @@ export const Contact = () => {
               variant="Outline"
               size="lg"
               required
-              border={"5px solid orange"}
+              border={'5px solid orange'}
             />
 
             <Textarea
@@ -205,10 +222,10 @@ export const Contact = () => {
               size="lg"
               required
               rows="7"
-              border={"5px solid orange"}
+              border={'5px solid orange'}
             />
 
-            <button className="button" type="submit">
+            <button className="button" type="submit" style={{ width: '100%' }}>
               Send
             </button>
           </VStack>
@@ -216,7 +233,13 @@ export const Contact = () => {
       </Flex>
 
       {/* second */}
-      {status === null ? "" : status ? <Toast status={status} /> : <Toast status={status} />}
+      {status === null ? (
+        ''
+      ) : status ? (
+        <Toast status={status} />
+      ) : (
+        <Toast status={status} />
+      )}
     </Box>
   );
 };
