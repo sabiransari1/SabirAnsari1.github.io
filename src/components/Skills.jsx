@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Flex, Grid, Text, Image, Center, Button } from "@chakra-ui/react";
+import { Box, Flex, Grid, Text, Button } from "@chakra-ui/react";
 import html from "../assets/images/html.png";
 import css from "../assets/images/css.png";
 import javascript from "../assets/images/javascript.png";
@@ -172,6 +172,7 @@ export const Skills = () => {
                 "2xl": "repeat(8,1fr)",
               }}
               gap={"1rem"}
+              justifyItems={"center"}
             >
               {filterSkills?.map((el, index) => (
                 <SkillCard key={index} {...el} />
