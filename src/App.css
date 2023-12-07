@@ -25,6 +25,7 @@
   color: white;
   font-size: 16px;
   padding: 5px 15px;
+  border: 1px solid var(--orange);
 }
 
 .button:hover {
@@ -36,7 +37,7 @@
 
 /* card effect */
 @property --gradient-angle {
-  syntax: "<angle>";
+  syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
 }
@@ -51,7 +52,7 @@
 
 .card::before,
 .card::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: -0.5rem;
   z-index: -1;

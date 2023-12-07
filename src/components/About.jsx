@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Flex,
   Box,
@@ -7,9 +7,9 @@ import {
   Image,
   Text,
   Center,
-} from "@chakra-ui/react";
-import SabirAnsari from "../assets/images/SabirAnsari.gif";
-import { Typewriter } from "react-simple-typewriter";
+} from '@chakra-ui/react';
+import SabirAnsari from '../assets/images/SabirAnsari.gif';
+import { Typewriter } from 'react-simple-typewriter';
 
 export const About = () => {
   return (
@@ -17,68 +17,68 @@ export const About = () => {
       id="about"
       className="about section"
       p={{
-        base: "1rem 1rem",
-        sm: "2rem 2rem",
-        md: "2rem 3rem",
-        lg: "3rem 5rem",
-        xl: "3rem 5rem",
-        "2xl": "3rem 5rem",
+        base: '1rem 1rem',
+        sm: '2rem 2rem',
+        md: '2rem 3rem',
+        lg: '3rem 5rem',
+        xl: '3rem 5rem',
+        '2xl': '3rem 5rem',
       }}
       direction={{
-        base: "column",
-        sm: "row",
-        md: "row",
-        lg: "row",
-        xl: "row",
-        "2xl": "row",
+        base: 'column',
+        sm: 'row',
+        md: 'row',
+        lg: 'row',
+        xl: 'row',
+        '2xl': 'row',
       }}
     >
       {/* left */}
       <Flex
         w={{
-          base: "100%",
-          sm: "50%",
-          md: "50%",
-          lg: "50%",
-          xl: "50%",
-          "2xl": "50%",
+          base: '100%',
+          sm: '50%',
+          md: '50%',
+          lg: '50%',
+          xl: '50%',
+          '2xl': '50%',
         }}
         p={{
-          base: "2rem",
-          sm: "2rem",
-          md: "2rem",
-          lg: "3rem",
-          xl: "3rem",
-          "2xl": "3rem",
+          base: '2rem',
+          sm: '2rem',
+          md: '2rem',
+          lg: '3rem',
+          xl: '3rem',
+          '2xl': '3rem',
         }}
-        direction={"column"}
-        align={"center"}
-        justify={"center"}
+        direction={'column'}
+        align={'center'}
+        justify={'center'}
       >
         <Image
           src={SabirAnsari}
           alt="Sabir Ansari"
           w={{
-            base: "90%",
-            sm: "90%",
-            md: "90%",
-            lg: "70%",
-            xl: "70%",
-            "2xl": "70%",
+            base: '90%',
+            sm: '90%',
+            md: '90%',
+            lg: '70%',
+            xl: '70%',
+            '2xl': '70%',
           }}
         />
 
         <Center>
           <Text>
-            Life is simple{" "}
+            Life is simple{' '}
             <span
               style={{
-                color: "#fca61f",
+                color: '#fca61f',
               }}
             >
               {/* Style will be inherited from the parent element */}
               <Typewriter
-                words={["Eat", "Code", "Sleep", "Repeat!"]}
+                words={['Eat', 'Code', 'Sleep', 'Repeat!']}
                 loop
                 cursor
                 cursorStyle="_"
@@ -94,40 +94,40 @@ export const About = () => {
       {/* right */}
       <Box
         w={{
-          base: "100%",
-          sm: "50%",
-          md: "50%",
-          lg: "50%",
-          xl: "50%",
-          "2xl": "50%",
+          base: '100%',
+          sm: '50%',
+          md: '50%',
+          lg: '50%',
+          xl: '50%',
+          '2xl': '50%',
         }}
       >
         {/* first */}
-        <Flex ml={"1rem"}>
+        <Flex ml={'1rem'}>
           <Text
             fontSize={{
-              base: "3xl",
-              sm: "3xl",
-              md: "4xl",
-              lg: "4xl",
-              xl: "4xl",
-              "2xl": "4xl",
+              base: '3xl',
+              sm: '3xl',
+              md: '4xl',
+              lg: '4xl',
+              xl: '4xl',
+              '2xl': '4xl',
             }}
-            fontWeight={"bold"}
-            mr={".6rem"}
+            fontWeight={'bold'}
+            mr={'.6rem'}
           >
             All
           </Text>
           <Text
             fontSize={{
-              base: "3xl",
-              sm: "3xl",
-              md: "4xl",
-              lg: "4xl",
-              xl: "4xl",
-              "2xl": "4xl",
+              base: '3xl',
+              sm: '3xl',
+              md: '4xl',
+              lg: '4xl',
+              xl: '4xl',
+              '2xl': '4xl',
             }}
-            fontWeight={"bold"}
+            fontWeight={'bold'}
             bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
             bgClip="text"
           >
@@ -138,10 +138,9 @@ export const About = () => {
         {/* second */}
         <UnorderedList
           id="user-detail-intro"
-          spacing={".5rem"}
-          styleType={"square"}
-          textAlign={"justify"}
-          color={"#788097"}
+          spacing={'.5rem'}
+          styleType={'square'}
+          textAlign={'justify'}
         >
           <ListItem>
             Hello! My name Sabir Ansari and I enjoy creating things that live on

@@ -43,7 +43,7 @@ export const Home = () => {
         <Box>
           <Box>
             <Text fontSize={'4xl'} fontWeight={'bold'}>
-              Hy, I Am
+              Hy, I'm
             </Text>
             <Text
               id="user-detail-name"
@@ -56,7 +56,7 @@ export const Home = () => {
             </Text>
           </Box>
 
-          <Box textAlign={'justify'} color={'#788097'}>
+          <Box textAlign={'justify'}>
             An enthusiastic solution-driven full-stack web developer with a
             creative mindset, skilled to use both front-end & back-end web
             development tools. Aiming to leverage once knowledge & build
@@ -142,6 +142,9 @@ export const Home = () => {
           alt={'Sabir Ansari'}
           borderRadius={'5px'}
           className="home-img"
+          boxShadow={
+            'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px'
+          }
           w={{
             base: '90%',
             sm: '90%',

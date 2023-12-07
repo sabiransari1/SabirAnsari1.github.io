@@ -12,6 +12,7 @@ import {
   Image,
   IconButton,
   Button,
+  useToast,
 } from '@chakra-ui/react';
 import { Toast } from './Toast';
 import github from '../assets/images/github.png';
@@ -24,29 +25,60 @@ import {
 } from 'react-icons/fa';
 
 export const Contact = () => {
-  const form = useRef();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [status, setStatus] = useState(null);
+
+  const toast = useToast();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const data = {
+      service_id: 'service_avqb6rt',
+      template_id: 'template_rzdfxwc',
+      user_id: 'x6cxSZREVZDuAUoO3',
+      template_params: {
+        name,
+        email,
+        message,
+      },
+    };
+
     setStatus(null);
     emailjs
-      .sendForm(
+      .send(
         'service_avqb6rt',
         'template_rzdfxwc',
-        form.current,
-        'L_kKOvVTY1BohKxbV'
+        {
+          name,
+          email,
+          message,
+        },
+        'x6cxSZREVZDuAUoO3'
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
           e.target.reset();
           setStatus(true);
+          toast({
+            status: 'success',
+            title: 'Message sent successfully',
+            position: 'top',
+            duration: 2000,
+          });
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
           setStatus(false);
+          toast({
+            status: 'error',
+            title: 'Something went wrong, try again',
+            position: 'top',
+            duration: 2000,
+          });
         }
       );
     setStatus(null);
@@ -193,11 +225,13 @@ export const Contact = () => {
         </VStack>
 
         {/* second */}
-        <form ref={form} onSubmit={sendEmail}>
+        <form onSubmit={sendEmail}>
           <VStack w={'100%'} spacing={'1rem'}>
             <Input
               type="text"
               name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               placeholder="Name"
               variant="Outline"
               size="lg"
@@ -208,6 +242,8 @@ export const Contact = () => {
             <Input
               type="email"
               name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Email"
               variant="Outline"
               size="lg"
@@ -218,6 +254,8 @@ export const Contact = () => {
             <Textarea
               placeholder="Message"
               name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               variant="Outline"
               size="lg"
               required
@@ -232,14 +270,14 @@ export const Contact = () => {
         </form>
       </Flex>
 
-      {/* second */}
+      {/* second
       {status === null ? (
         ''
       ) : status ? (
         <Toast status={status} />
       ) : (
         <Toast status={status} />
-      )}
+      )} */}
     </Box>
   );
 };

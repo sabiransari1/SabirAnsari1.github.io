@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-scroll";
+import React from 'react';
+import { Link } from 'react-scroll';
 import {
   Box,
   Flex,
@@ -8,47 +8,47 @@ import {
   Image,
   Center,
   useColorMode,
-} from "@chakra-ui/react";
-import todo from "../assets/images/todo.png";
-import admin_dashboard from "../assets/images/admin_dashboard.png";
-import dashboard from "../assets/images/dashboard.png";
-import safar from "../assets/images/safar.png";
+} from '@chakra-ui/react';
+import todo from '../assets/images/todo.png';
+import admin_dashboard from '../assets/images/admin_dashboard.png';
+import dashboard from '../assets/images/dashboard.png';
+import safar from '../assets/images/safar.png';
 
 const projects = [
   {
     img: todo,
-    title: "Todo Application",
-    desc: "A Todo Application, It allows users to effortlessly manage their tasks and events, helping them stay organized and on top.",
-    stack: "HTML, CSS, JavaScript, LocalStorage, React.js, Chakra-UI",
-    codebase: "https://github.com/sabiransari1/todo-application",
-    live: "https://todo-application-sabiransari1.vercel.app/",
+    title: 'Todo Application',
+    desc: 'A Todo Application, It allows users to effortlessly manage their tasks and events, helping them stay organized and on top.',
+    stack: 'HTML, CSS, JavaScript, LocalStorage, React.js, Chakra-UI',
+    codebase: 'https://github.com/sabiransari1/todo-application',
+    live: 'https://todo-application-sabiransari1.vercel.app/',
   },
   {
     img: admin_dashboard,
-    title: "Admin Dashboard",
-    desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs with chart presentation.",
+    title: 'Admin Dashboard',
+    desc: 'CRUD dashboard, an user interface that we use to interact with databases through APIs with chart presentation.',
     stack:
-      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, MVC-architecture, Chakra-UI, Json-Server, Chart.js, React-Chartjs-2",
-    codebase: "https://github.com/sabiransari1/admin-dashboard",
-    live: "https://admin-dashboard-sabiransari1.vercel.app/",
+      'HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, MVC-architecture, Chakra-UI, Json-Server, Chart.js, React-Chartjs-2',
+    codebase: 'https://github.com/sabiransari1/admin-dashboard',
+    live: 'https://admin-dashboard-sabiransari1.vercel.app/',
   },
   {
     img: dashboard,
-    title: "CRUD Dashboard",
-    desc: "CRUD dashboard, an user interface that we use to interact with databases through APIs.",
+    title: 'CRUD Dashboard',
+    desc: 'CRUD dashboard, an user interface that we use to interact with databases through APIs.',
     stack:
-      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, MVC-architecture, Chakra-UI, Json-Server",
-    codebase: "https://github.com/sabiransari1/dashboard",
-    live: "https://dashboard-sabiransari1.vercel.app/",
+      'HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, MVC-architecture, Chakra-UI, Json-Server',
+    codebase: 'https://github.com/sabiransari1/dashboard',
+    live: 'https://dashboard-sabiransari1.vercel.app/',
   },
   {
     img: safar,
-    title: "SAFAR",
-    desc: "SAFAR an online hotel booking platform that allows users to book hotels all over the world.",
+    title: 'SAFAR',
+    desc: 'SAFAR an online hotel booking platform that allows users to book hotels all over the world.',
     stack:
-      "HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, MVC-architecture, Chakra-UI, TypeScript",
-    codebase: "https://github.com/sabiransari1/safar",
-    live: "https://safar-sabiransari1.vercel.app/",
+      'HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, MVC-architecture, Chakra-UI, TypeScript',
+    codebase: 'https://github.com/sabiransari1/safar',
+    live: 'https://safar-sabiransari1.vercel.app/',
   },
 ];
 
@@ -59,40 +59,40 @@ export const Projects = () => {
     <Box
       id="projects"
       p={{
-        base: "1rem 1rem",
-        sm: "1rem 1rem",
-        md: "1rem 2rem",
-        lg: "3rem 5rem",
-        xl: "3rem 5rem",
-        "2xl": "3rem 5rem",
+        base: '1rem 1rem',
+        sm: '1rem 1rem',
+        md: '1rem 2rem',
+        lg: '3rem 5rem',
+        xl: '3rem 5rem',
+        '2xl': '3rem 5rem',
       }}
     >
       {/* first */}
       <Flex>
         <Text
           fontSize={{
-            base: "3xl",
-            sm: "3xl",
-            md: "4xl",
-            lg: "4xl",
-            xl: "4xl",
-            "2xl": "4xl",
+            base: '3xl',
+            sm: '3xl',
+            md: '4xl',
+            lg: '4xl',
+            xl: '4xl',
+            '2xl': '4xl',
           }}
-          fontWeight={"bold"}
-          mr={".6rem"}
+          fontWeight={'bold'}
+          mr={'.6rem'}
         >
           My
         </Text>
         <Text
           fontSize={{
-            base: "3xl",
-            sm: "3xl",
-            md: "4xl",
-            lg: "4xl",
-            xl: "4xl",
-            "2xl": "4xl",
+            base: '3xl',
+            sm: '3xl',
+            md: '4xl',
+            lg: '4xl',
+            xl: '4xl',
+            '2xl': '4xl',
           }}
-          fontWeight={"bold"}
+          fontWeight={'bold'}
           bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
           bgClip="text"
         >
@@ -103,68 +103,67 @@ export const Projects = () => {
       {/* second */}
       <Grid
         templateColumns={{
-          base: "repeat(1,1fr)",
-          sm: "repeat(2,1fr)",
-          md: "repeat(2,1fr)",
-          lg: "repeat(2,1fr)",
-          xl: "repeat(2,1fr)",
-          "2xl": "repeat(3,1fr)",
+          base: 'repeat(1,1fr)',
+          sm: 'repeat(2,1fr)',
+          md: 'repeat(2,1fr)',
+          lg: 'repeat(2,1fr)',
+          xl: 'repeat(2,1fr)',
+          '2xl': 'repeat(3,1fr)',
         }}
-        gap={"2rem"}
+        gap={'2rem'}
       >
         {projects?.map((el, index) => (
           <Grid
             className="project-card"
             key={index}
             p={{
-              base: "1rem",
-              sm: "1rem",
-              md: "1rem",
-              lg: "3rem",
-              xl: "3rem",
-              "2xl": "3rem",
+              base: '1rem',
+              sm: '1rem',
+              md: '1rem',
+              lg: '3rem',
+              xl: '3rem',
+              '2xl': '3rem',
             }}
-            gap={".5rem"}
+            gap={'.5rem'}
             // boxShadow={
             //   "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset"
             // }
             borderRadius="10px"
-            color={"#788097"}
-            w={"100%"}
+            w={'100%'}
           >
-            <a href={el.live} target={"_blank"} rel="noreferrer noopener">
+            <a href={el.live} target={'_blank'} rel="noreferrer noopener">
               <Image
                 src={el.img}
                 alt={el.title}
-                margin={"auto"}
+                margin={'auto'}
                 borderRadius="10px"
-                cursor={"pointer"}
+                cursor={'pointer'}
                 transition="transform .5s"
                 _hover={{
-                  cursor: "pointer",
-                  transform: "scale(0.9)",
+                  cursor: 'pointer',
+                  transform: 'scale(0.9)',
                 }}
               />
             </a>
 
             <Center
               className="project-title"
-              fontSize={"2xl"}
-              color={colorMode === "light" ? "black" : "white"}
+              fontSize={'2xl'}
+              color={colorMode === 'light' ? 'black' : 'white'}
             >
               {el.title}
             </Center>
 
             <Text
               className="project-description"
-              textAlign={"justify"}
+              textAlign={'justify'}
               fontSize={{
-                base: "1xl",
-                sm: "1xl",
-                md: "1xl",
-                lg: "1xl",
-                xl: "1xl",
-                "2xl": "2xl",
+                base: '1xl',
+                sm: '1xl',
+                md: '1xl',
+                lg: '1xl',
+                xl: '1xl',
+                '2xl': '2xl',
               }}
             >
               {el.desc}
@@ -174,19 +173,19 @@ export const Projects = () => {
               <Text
                 bgGradient="linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%)"
                 bgClip="text"
-                display={"inline"}
+                display={'inline'}
               >
-                Tech Stack :-{" "}
+                Tech Stack :-{' '}
               </Text>
-              <Text display={"inline"}>{el.stack} </Text>
+              <Text display={'inline'}>{el.stack} </Text>
             </Box>
 
-            <Flex justify={"space-between"}>
-              <a href={el.codebase} target={"_blank"} rel="noreferrer noopener">
+            <Flex justify={'space-between'}>
+              <a href={el.codebase} target={'_blank'} rel="noreferrer noopener">
                 <button className="button project-github-link">Codebase</button>
               </a>
 
-              <a href={el.live} target={"_blank"} rel="noreferrer noopener">
+              <a href={el.live} target={'_blank'} rel="noreferrer noopener">
                 <button className="button project-deployed-link">Live</button>
               </a>
             </Flex>
