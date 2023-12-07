@@ -8,7 +8,7 @@ import redux from '../assets/images/redux.png';
 import typescript from '../assets/images/typescript.png';
 import chakra from '../assets/images/chakra.png';
 import nodejs from '../assets/images/nodejs.png';
-import express from '../assets/images/express.png';
+import expressjs from '../assets/images/expressjs.png';
 import mongodb from '../assets/images/mongodb.png';
 import git from '../assets/images/git.png';
 import npm from '../assets/images/npm.png';
@@ -29,7 +29,7 @@ const skills = [
   { img: typescript, name: 'TypeScript', type: 'frontend' },
   { img: chakra, name: 'Chakra-UI', type: 'frontend' },
   { img: nodejs, name: 'Node.js', type: 'backend' },
-  { img: express, name: 'Express', type: 'backend' },
+  { img: expressjs, name: 'Express.js', type: 'backend' },
   { img: mongodb, name: 'MongoDB', type: 'backend' },
   { img: git, name: 'Git', type: 'others' },
   { img: postman, name: 'Postman', type: 'others' },
