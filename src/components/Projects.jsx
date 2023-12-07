@@ -9,12 +9,30 @@ import {
   Center,
   useColorMode,
 } from '@chakra-ui/react';
+import zoomcar from '../assets/images/zoomcar.png';
+import apnamart from '../assets/images/apnamart.png';
 import todo from '../assets/images/todo.png';
 import admin_dashboard from '../assets/images/admin_dashboard.png';
 import dashboard from '../assets/images/dashboard.png';
 import safar from '../assets/images/safar.png';
 
 const projects = [
+  {
+    img: zoomcar,
+    title: 'Zoomcar',
+    desc: 'Zoomcar is an online Car Rental platform.',
+    stack: 'HTML, CSS, JavaScript',
+    codebase: 'https://github.com/sabiransari1/zoomcar',
+    live: 'https://zoomcar-sabiransari1.netlify.app/',
+  },
+  {
+    img: apnamart,
+    title: 'Apnamart',
+    desc: 'ApnaMART is India’s largest online B2B marketplace, connecting buyers with suppliers. As well as provide services for an individual customer.',
+    stack: 'HTML, CSS, JavaScript, LocalStorage',
+    codebase: 'https://github.com/sabiransari1/apnamart',
+    live: 'https://apnamart-sabiransari1.netlify.app/',
+  },
   {
     img: todo,
     title: 'Todo Application',
