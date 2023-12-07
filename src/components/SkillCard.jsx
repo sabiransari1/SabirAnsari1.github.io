@@ -6,7 +6,6 @@ export const SkillCard = ({ img, name }) => {
     <Box
       className="skills-card"
       borderRadius={'10px'}
-      cursor={'pointer'}
       p={'.5rem'}
       w={'100px'}
       // boxShadow={
