@@ -138,9 +138,9 @@ export const Projects = () => {
               base: '1rem',
               sm: '1rem',
               md: '1rem',
-              lg: '3rem',
-              xl: '3rem',
-              '2xl': '3rem',
+              lg: '2rem',
+              xl: '2rem',
+              '2xl': '2rem',
             }}
             gap={'.5rem'}
             // boxShadow={
