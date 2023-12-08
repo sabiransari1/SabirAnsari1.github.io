@@ -12,7 +12,7 @@ import {
 import zoomcar from '../assets/images/zoomcar.png';
 import apnamart from '../assets/images/apnamart.png';
 import todo from '../assets/images/todo.png';
-import admin_dashboard from '../assets/images/admin_dashboard.png';
+import adminDashboard from '../assets/images/adminDashboard.png';
 import dashboard from '../assets/images/dashboard.png';
 import safar from '../assets/images/safar.png';
 
@@ -42,7 +42,7 @@ const projects = [
     live: 'https://todo-application-sabiransari1.vercel.app/',
   },
   {
-    img: admin_dashboard,
+    img: adminDashboard,
     title: 'Admin Dashboard',
     desc: 'CRUD dashboard, an user interface that we use to interact with databases through APIs with chart presentation.',
     stack:
