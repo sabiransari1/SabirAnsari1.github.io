@@ -143,7 +143,7 @@ export const About = () => {
           textAlign={'justify'}
         >
           <ListItem>
-            Hello! My name Sabir Ansari and I enjoy creating things that live on
+            Hello! My name is Sabir Ansari and I enjoy creating things that live on
             the internet.
           </ListItem>
 
