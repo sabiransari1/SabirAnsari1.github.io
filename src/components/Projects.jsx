@@ -64,7 +64,7 @@ const projects = [
     title: 'SAFAR',
     desc: 'SAFAR an online hotel booking platform that allows users to book hotels all over the world.',
     stack:
-      'HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, MVC-architecture, Chakra-UI, TypeScript',
+      'HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, MVC-architecture, Chakra-UI, TypeScript,  RESTful-API, Node.js, Express.js, MongoDB',
     codebase: 'https://github.com/sabiransari1/safar',
     live: 'https://safar-sabiransari1.vercel.app/',
   },
