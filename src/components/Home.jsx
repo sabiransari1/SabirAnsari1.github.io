@@ -92,7 +92,7 @@ export const Home = () => {
               w={'50%'}
               transition="transform .5s"
               _hover={{
-                transform: 'scale(1.5)',
+                transform: 'scale(1.2)',
               }}
             />
           </a>
@@ -108,7 +108,7 @@ export const Home = () => {
               w={'50%'}
               transition="transform .5s"
               _hover={{
-                transform: 'scale(1.5)',
+                transform: 'scale(1.2)',
               }}
             />
           </a>
