@@ -46,7 +46,7 @@ const projects = [
     title: 'Admin Dashboard',
     desc: 'CRUD dashboard, an user interface that we use to interact with databases through APIs with chart presentation.',
     stack:
-      'HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Flux-architecture, Chakra-UI, Json-Server, Chart.js, React-Chartjs-2',
+      'HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Flux-Architecture, Chakra-UI, Json-Server, Chart.js, React-Chartjs-2',
     codebase: 'https://github.com/sabiransari1/admin-dashboard',
     live: 'https://admin-dashboard-sabiransari1.vercel.app/',
   },
@@ -55,7 +55,7 @@ const projects = [
     title: 'CRUD Dashboard',
     desc: 'CRUD dashboard, an user interface that we use to interact with databases through APIs.',
     stack:
-      'HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Flux-architecture, Chakra-UI, Json-Server',
+      'HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Flux-Architecture, Chakra-UI, Json-Server',
     codebase: 'https://github.com/sabiransari1/dashboard',
     live: 'https://dashboard-sabiransari1.vercel.app/',
   },
@@ -64,7 +64,7 @@ const projects = [
     title: 'SAFAR',
     desc: 'SAFAR an online hotel booking platform that allows users to book hotels all over the world.',
     stack:
-      'HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Flux-architecture, Chakra-UI, TypeScript,  RESTful-API, Node.js, Express.js, MongoDB',
+      'HTML, CSS, JavaScript, React.js, Redux, React-Redux, Redux-Thunk, Flux-Architecture, Chakra-UI, TypeScript,  RESTful-API, Node.js, Express.js, MongoDB',
     codebase: 'https://github.com/sabiransari1/safar',
     live: 'https://safar-sabiransari1.vercel.app/',
   },
